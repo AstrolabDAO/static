@@ -1,0 +1,8 @@
+slug,name,nativeAddress,nativeNetwork,status
+bnb-testnet:home-bridge,bnb-testnet:home-bridge,0x848e0877452112476141D8c37D356ff1367D00D8,bnb-chain-testnet,active
+avax-testnet:remote-bridge,avax-testnet:remote-bridge,0xD7e15EF099187206A50b0fDF606a0EE592E16032,avalanche-testnet-fuji,active
+bnb-chain-mainnet:home-bridge,bnb-chain-mainnet:home-bridge,0xd0bca4c53f99ce60851564536a8f469c9d4823f8,bnb-chain-mainnet,active
+avalanche-mainnet:remote-bridge,avalanche-mainnet:remote-bridge,0xaed44750ac50b5ed9616239e099f8f13c8a9ef62,avalanche-mainnet,active
+local:home-bridge,local:home-bridge,0x58dc17e91b6B15eC5698f5753847c3bEA0dfc24e,arbitrum-local,active
+arbitrum-mainnet-one:home-bridge,arbitrum-mainnet-one:home-bridge,0x60949084efab18b4fD4A37861B89b0B82Dfd807B,arbitrum-mainnet-one,active
+optimism-mainnet:remote-bridge,optimism-mainnet:remote-bridge,0x93e3e34985Dce0bd4481694eE499108B05034b78,optimism-mainnet,active

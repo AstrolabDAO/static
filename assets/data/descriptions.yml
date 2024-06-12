@@ -1,0 +1,478 @@
+# strategies
+stargate-metastable: |
+  Algorithmically provides liquidity to Stargate stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+hop-metastable: |
+  Algorithmically provides liquidity to Hop stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+aave-v3-metastable: |
+  Algorithmically provides liquidity to AAVE V3 stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+compound-v3-metastable: |
+  Algorithmically provides liquidity to Coumpound V3 stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+venus-metastable: |
+  Algorithmically provides liquidity to Venus stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+agave-metastable: |
+  Algorithmically provides liquidity to Agave stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+lodestar-metastable: |
+  Algorithmically provides liquidity to Lodestar stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+sonne-metastable: |
+  Algorithmically provides liquidity to Sonne stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+benqi-metastable: |
+  Algorithmically provides liquidity to Benqi stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+moonwell-metastable: |
+  Algorithmically provides liquidity to Moonwell stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+toros-metastable: |
+  Algorithmically provides liquidity to Toros stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+vaultka-metastable: |
+  Algorithmically provides liquidity to Vaultka stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+balancer-metastable: |
+  Algorithmically provides liquidity to Balancer stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+curve-metastable: |
+  Algorithmically provides liquidity to Curve stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+wombat-metastable: |
+  Algorithmically provides liquidity to Wombat stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+gamma-metastable: |
+  Algorithmically provides liquidity to Gamma stable pools.
+
+  Claiming of reward tokens, rebalancing and compounding are automated.
+
+# protocols
+# money markets
+aave: |
+  AAVE v3 is the leading money market on Ethereum and compatible EVMs.
+  It is a decentralized, non-custodial liquidity protocol where users can act as depositors or borrowers.
+  Depositors provide liquidity to earn passive income, while borrowers can take fixed or variable overcollateralized loans.
+  The protocol features Aavenomics for protocol decentralization, a governance forum for improvement proposals, a risk framework for assessing protocol risks, and interest rate models to manage liquidity risk.
+  AAVE also pioneered flash-lending (block-time uncollateralized loans).
+  It emphasizes security and has been proven to be resilient to attacks.
+
+compound: |
+  Compound v3 (Comet) is a leading money market on Etherum and compatible EVMs.
+  It is a decentralized, non-custodial liquidity protocol where users can act as depositors or borrowers.
+  Depositors provide liquidity to earn passive income, while borrowers can take fixed or variable overcollateralized loans.
+  The protocol features tokenomics for protocol decentralization, a governance forum for improvement proposals, a risk framework for assessing protocol risks, and interest rate models to manage liquidity risk.
+  Compound also was one of the first protocols to provide flash-loans (block-time uncollateralized lending). It emphasizes security and has been proven to be resilient to attacks.
+
+venus: |
+  Compound v2 fork, Venus inherits from its features and more: it combines stablecoin minting and algorithmic money markets.
+  It focuses on risk management, decentralization, and maximizing its users experience.
+  Venus is a time-proven lending and borrowing protocol, evolving based on its passed successes and lessons.
+
+benqi: |
+  Compound v2 fork, Benqi inherits from its features and more: BENQI is a DeFi suite on Avalanche, comprising BENQI Markets, BENQI Liquid Staking, and Ignite.
+  BENQI Markets offers lending, borrowing, and interest-earning services with digital assets, featuring over-collateralized borrowing and instant liquidity supply and withdrawal.
+  BENQI Liquid Staking tokenizes AVAX for use in DeFi applications, while Ignite supports Avalanche validators and Subnets creation.
+  The platform emphasizes permissionless access, utility, and capital efficiency, along with necessary risk mitigation measures.
+
+agave: |
+  AAVE v2 fork, Agave inherits from its features and more: operating on the Gnosis Chain, it enables users to deposit tokens for passive income or borrow in an over-collateralized manner, including flash loans.
+  Agave aims to democratize access to yield and credit, benefiting from low transaction fees on the Gnosis Chain.
+  As a DAO, it allows $AGVE token holders to influence its direction and strategy.
+
+sonne-finance: |
+  Compound v2 fork, Sonne inherits from its features: it is a multichain EVM-compatible lending and borrowing protocol.
+  It offers decentralized, transparent, and non-custodial peer-to-peer lending solutions for various supported assets.
+  It aims to be a prime lending platform on Optimism and Base by providing competitive incentives for money markets and maintaining deep liquidity.
+
+flux-finance: |
+  Compound v2 fork, Flux inherits from its features and more: it is a decentralized lending protocol developed by the Ondo Finance team.
+  It supports both permissionless and permissioned tokens, with permissions enforced per asset.
+  The platform allows overcollateralized lending and borrowing in a peer-to-pool basis.
+  Lenders can earn interest on stablecoins, while borrowers can borrow stablecoins against collateral.
+  Governance is handled by the Ondo DAO.
+
+lodestar-finance: |
+  Compound v2 fork, Lodestar inherits from its features and more: it is an algorithmic borrowing and lending protocol on Arbitrum, designed to bring decentralized money market services to Arbitrum.
+  It allows users to earn interest on Arbitrum assets, use deposits as collateral for borrowing, access liquidity tax-free, and implement leveraged trading strategies.
+  The protocol also enables unlocking the liquidity of yield-bearing assets while retaining underlying yields.
+  It aims to support and create value for emerging Arbitrum communities and DAOs.
+
+moonwell: |
+  Compound v2 fork, Moonwell inherits from its features and more: it is a multichain decentralized lending and borrowing protocol originating from the Moonbeam ecosystem.
+  It focuses on simplicity, offering a user-friendly experience for lending, borrowing, and claiming rewards.
+  Moonwell's features include non-custodial asset management, intuitive user interface, robust security, transparent operations, and on-chain governance.
+  The platform is designed for global accessibility, supporting multiple languages and backed by an international community.
+
+radiant-capital: |
+  AAVE v2 fork, Radiant v2 inherits from its features and more: it is a decentralized money market that incorporates innovative changes in its core protocol mechanics, emissions, utility, and cross-chain functionality.
+  It's designed to address limitations from its earlier version and the broader DeFi ecosystem, emphasizing utility exchange, governance, and collective benefit.
+  Radiant V2 introduces new collateral options, an updated token format, and enhanced cross-chain operations to improve the utility and efficiency of the lending and borrowing process.
+
+# bridges
+stargate-finance: |
+  Stargate is a decentralized platform that offers a fully composable native asset bridge, built on LayerZero.
+  It streamlines cross-chain liquidity transfers, enabling users to swap native assets across different blockchains in a single transaction.
+  Stargate stands out by addressing the bridging trilemma, offering instant guaranteed finality, the use of native assets without wrapping, and unified liquidity across chains.
+  This makes it a versatile tool for DeFi users and applications requiring efficient cross-chain transactions.
+
+hop-exchange: |
+  Hop is a scalable cross-chain token bridge that facilitates quick token transfers across rollups and sidechains.
+  It utilizes market makers, known as Bonders, who front liquidity on the destination chain for a fee, using hTokens to enable swift and efficient token movement.
+  The protocol is designed to be decentralized and trustless, ensuring users receive their funds even if Bonders are offline, and it automatically rebalances liquidity across chains through AMMs.
+
+connext-network: |
+  Connext is a modular protocol for secure cross-chain fund and data transfer.
+  It allows developers to build crosschain applications (xApps) that interact with multiple blockchains or rollups simultaneously.
+  The protocol's design emphasizes modularity, security, and simplicity, using a hub-and-spoke architecture and watchers for network monitoring.
+  Connext's 'xcall' feature enables asynchronous interaction with contracts on other chains, supporting a wide range of crosschain activities.
+
+across-protocol: |
+  Across is a cross-chain bridge optimized for L2s and rollups whose security relies on UMA's optimistic oracle.
+  It achieves high capital efficiency by pooling liquidity cross-chain, incentivizing a permissionless and competitive relayer network, and a with its no-slippage fee model.
+  Across keeps most if its pool liquidity on mainnet for security, and uses bots for rebalancing.
+  Its fee model is based on asset utilization in the liquidity pool, providing consistent pricing.
+
+synapse-protocol: |
+  Synapse Bridge, built on the Synapse Interchain Network, enables seamless asset swapping across over 15 EVM and non-EVM blockchains.
+  It supports both canonical token bridging (wrapped assets) and liquidity-based bridging (native assets) via cross-chain stableswap pools.
+  Widely used in the DeFi space, the bridge cross-chain deep liquidity integrates into mainstream major dApps.
+
+cbridge: |
+  cBridge by Celer Network is a cross-chain token bridging platform, enhancing liquidity for users and offering efficient liquidity management for both node operators and Liquidity Providers.
+  It extends the capabilities of the Celer State Guardian Network (SGN), supporting cross-chain DEX and NFT functionalities.
+  cBridge aims to deliver an optimal token bridging experience, backed by the security and efficiency provided by validators and stakers in the system.
+
+symbiosis: |
+  Symbiosis is a decentralized exchange protocol that pools liquidity from various blockchains, both EVM and non-EVM.
+  It enables seamless cross-chain trading and asset transfers in a single transaction.
+  Symbiosis operates without a central authority and aims to interconnect every blockchain with sufficient market interest.
+  The protocol is designed to be completely decentralized, non-custodial, and provides boundless cross-chain liquidity, offering the best exchange rates for a wide range of token pairs.
+
+squid: |
+  Squid Router is a bridge aggregator and interoperability protocol that provides APIs and development tools for building cross-chain swaps, bridges, and transactions.
+  It enables functionalities like buying NFTs across marketplaces with various tokens, making single-chain DeFi multi-chain and cross-chain, and gaming on different chains without multiple transactions or wallets.
+  Squid has been integrated into mainstream platforms like MetaMask, facilitating high volumes.
+
+lifi: |
+  Li.Fi is a meta-aggregator and interoperability protocol offering an aggregation layer for DEXs, bridges.
+  It provides optimized, secure, and efficient routes for asset transfers across different blockchains.
+  Li.Fi's API and SDK enable developers to integrate cross-chain functionalities into DeFi applications, enhancing interoperability in the ecosystem.
+  The platform aims to simplify and improve the user experience for cross-chain interactions.
+
+socket: |
+  Socket is a bridge aggregator and interoperability protocol designed for secure and efficient data and asset transfers across different blockchains.
+  Unlike typical bridges or cross-chain apps, Socket functions as an infrastructure layer, enabling developers to build applications with native interoperability features.
+  It includes two main components: Socket Liquidity Layer (SocketLL) for asset transfers and Socket Data Layer (SocketDL) for secure data transfers between smart contracts across chains.
+  Socket optimizes for varying objectives like trust, latency, and generalizability to cater to diverse use cases.
+
+# dexes
+balancer: |
+  Balancer is a protocol enabling programmable liquidity.
+  It offers the creation and management of customizable token pools with varying weights and fees.
+  The protocol's pools are also utilized for asset management, portfolio rebalancing, and smart order routing.
+  Balancer is governed by the BAL token that users can earn through providing liquidity, staking and voting.
+
+curve: |
+  Curve operates as a decentralized exchange liquidity pool on Ethereum, optimized for stablecoin trading.
+  It employs low-slippage bonding curves to enable cost-effective swaps between similar assets, like various stablecoins or wrapped tokens.
+  Curve is governed by the CRV token that users can earn through providing liquidity, staking and voting.
+
+uniswap: |
+  Uniswap is the leading Ethereum DEX and AMM (automated market maker).
+  It is now deployed on multiple EVM compatible blockchains, including all of Ethereum layer 2s.
+  Utilizing a constant product formula, it provides liquidity for pairs of ERC-20 tokens.
+  The protocol supports token swapping, liquidity provision, and fee generation.
+  Governance of Uniswap is conducted by a community of UNI token holders and delegates, who participate in voting on proposals and share in the protocol's revenue.
+
+sushiswap: |
+  Uniswap fork, SushiSwap inherits from its features and more: it is a major EVM compatible DEX and AMM (automated market maker).
+  SushiSwap features include limit orders, cross-chain swaps, liquidity mining, a decentralized lending platform (Kashi), and a payment solution (Furo).
+  It is governed by the SUSHI token that users can earn through providing liquidity, staking and voting.
+
+quickswap: |
+  Uniswap fork, QuickSwap inherits from its features and more: it is a major EVM compatible DEX and AMM (automated market maker).
+  QuickSwap supports a wide range of tokens, offering low transaction fees, substantial liquidity, and yield farming opportunities for both traders and liquidity providers.
+  It is governed by the QUICK token that users can earn through providing liquidity, staking and voting.
+
+dodo-exchange: |
+  DODO is an EVM compatible DEX utilizing a proactive market maker (PMM) algorithm.
+  This system enhances liquidity and price discovery for diverse token pairs.
+  Additional features include liquidity mining, smart trade options, and crowdpooling, expanding its utility for various crypto activities.
+  DODO is governed by the DODO token that users can earn through providing liquidity, staking and voting.
+
+trader-joe: |
+  Trader Joe is an EVM compatible DEX and AMM (automated market maker), among Avalanche's leading DEXs.
+  It enables trading across numerous tokens, coupled with rewards from yield farming.
+  Trader Joe also features other DeFi services such as token lending and borrowing, as well as NFT trading.
+  It is one of the only protocol to have released a viable alternative to Uniswap V3 concentrated liquidity model, called Liquidity Book.
+  The protocol is governed by the JOE token that users can earn through providing liquidity, staking and voting.
+
+biswap: |
+  Uniswap fork, Biswap inherits from its features and more: it is a DEX designed for the BNB Smart Chain, focusing on low-fee and secure token swapping.
+  It provides users with a range of trading tools, liquidity pools, and a launchpad platform.
+  Biswap is governed by the BSW token that users can earn through providing liquidity, staking and voting.
+
+velodrome-finance: |
+  Solidly fork, Velodrome inherits from its ve(3,3) tokenomics and more: it is Optimism's leading DEX and merges elements of Curve, Solidly, and Uniswap.
+  It aims to be the primary liquidity hub on the Optimism network.
+  Velodrome facilitates trading of both stable and volatile tokens, offering low fees and high capital efficiency.
+  It is governed by the VELO token that users can earn through providing liquidity, staking and voting.
+
+aerodrome: |
+  Solidly fork, Aerodrome inherits from its ve(3,3) tokenomics and more: it is Base's leading DEX and merges elements of Curve, Solidly, and Uniswap.
+  Designed as the central liquidity hub for the Base network, it supports trading of various stable and volatile tokens with low fees and efficient capital usage.
+  It is governed by the AERO token that users can earn through providing liquidity, staking and voting.
+
+camelot-dex: |
+  Uniswap fork, Camelot DEX inherits from its features and more: it is Arbitrum's leading DEX, using a proactive market maker (PMM) algorithm.
+  This system enhances liquidity and facilitates efficient price discovery for various token pairs.
+  The platform supports features like liquidity mining, smart trade, and crowdpooling, catering to diverse crypto trading needs.
+  Camelot is governed by the GRAIL token that users can earn through providing liquidity, staking and voting.
+
+wombat-exchange: |
+  Wombat Exchange is a multi-chain stableswap that focuses on efficient stablecoin trading with minimal slippage.
+  It uses an innovative open liquidity pool design and an asset-to-liability model to enhance capital efficiency and scalability.
+  The platform also features unique mechanisms like coverage ratios to maintain equilibrium.
+  Wombat is governed by the WOM token that users can earn through providing liquidity, staking and voting.
+
+izumi: |
+  iZUMi finance is a major DeFi primitive on fast-growing EVM chains, featuring a Uniswap v3 fork (iZiSwap) with programmable liquidity (LiquidBox) and Discretized-Liquidity-AMM (DLAMM) for enhanced trading.
+  The platform includes iZUMi Bond and iUSD for stable, fixed-income investments and convertible options to its iZi token.
+  iZUMi's focus is on providing efficient, on-chain liquidity for tokens across various blockchains.
+  The platform is governed by the iZi token that users can earn through providing liquidity, staking and voting.
+
+kyberswap: |
+  KyberSwap is a multi-chain DeFi aggregator and liquidity protocol offering diverse trading solutions.
+  It includes features like KyberAI for trading insights, a trade route scanner for superior swap rates, and a limit order option for controlled, gasless trades.
+  The platform also provides liquidity solutions like KyberSwap Classic and Elastic, offering programmable pricing curves and customizable price ranges for liquidity providers.
+  Additionally, KyberSwap supports cross-chain swaps and a widget for integrating superior rates into decentralized applications.
+
+ambient: |
+  Ambient (formerly CrocSwap) is an innovative EVM compatible DEX that prioritizes capital efficiency, achieved by batching all liquidity in one pool.
+  It uniquely combines two-sided AMMs with concentrated and ambient constant-product liquidity.
+  Ambient's smart contract architecture enables substantial gas savings and merges different liquidity styles within a single pool.
+  It offers dynamically adjusted pool fees, auto-reinvested fees for compounded earnings, and protection against JIT liquidity attacks.
+  Ambient also features surplus collateral for efficient trading and supports gasless transactions and permissioned pools governed by smart contract oracles.
+
+swaap-finance: |
+  Swaap Finance is a platform that aims to deliver superior yields to liquidity providers using advanced market-making models, developed in collaboration with mathematicians.
+  Its innovative approach, integrating oracles and dynamic spread, is designed to generate real, sustainable yields while effectively mitigating impermanent loss (IL).
+  Swaap is governed by the SWAAP token that users can earn through providing liquidity.
+
+# dex amm (position managers)
+gamma-strategies: |
+  Gamma is a non-custodial protocol for automated and active management of concentrated liquidity.
+  Its main feature is the vault, a position manager contract that manages liquidity pools with strategies, creating LP tokens for users. These tokens can be used for incentives within and outside the platform.
+  Gamma also offers an analytics suite to help users evaluate positions, and its vaults are compatible with various blockchains and exchanges.
+  The protocol is governed by the GAMMA token that users can earn through providing liquidity, staking and voting.
+
+maverick-protocol: |
+  Maverick Protocol is a decentralized finance infrastructure that enhances capital efficiency for traders and liquidity providers.
+  It features an Automated Market Maker (AMM) that automates liquidity concentration as prices fluctuate, resulting in more liquid markets and reduced gas fees.
+  The protocol allows liquidity providers to follow asset prices in a single direction, akin to single-sided liquidity strategies, exposing them mostly or entirely to one asset in a pool.
+  Maverick's dynamic distribution AMM automates strategies that traditionally needed daily maintenance.
+
+arrakis-finance: |
+  Arrakis is a market-making infrastructure that enables the execution of sophisticated algorithmic strategies on Uniswap.
+  Arrakis offers Vaults where liquidity providers can have their assets managed automatically in a non-custodial, transparent, and capital-efficient manner.
+  This service provides a modern solution for liquidity management in the decentralized finance ecosystem.
+
+range-protocol: |
+  Range Protocol focuses on building infrastructure for on-chain asset management using non-custodial vaults.
+  It allows vault managers to implement automated strategies transparently on-chain.
+  The protocol supports various strategies, including automated liquidity management on concentrated liquidity AMMs such as Uniswap V3, liquid staking, NFT-finance, and derivatives.
+  Range Protocol's aims at enabling blockchain-based assets to be managed professionally, similar to traditional financial platforms.
+
+elixir: |
+  Elixir is a decentralized finance (DeFi) protocol that enables the creation of non-custodial vaults for automated asset management.
+  It allows users to create vaults with custom strategies, which can be executed on-chain.
+  Elixir's vaults are compatible with various blockchains and exchanges, and they can be used for various purposes, including automated liquidity management, liquid staking, NFT-finance, and derivatives.
+
+# perp dexes
+dydx: |
+  dYdX is a decentralized platform offering advanced financial services such as perpetual trading, margin trading, and spot trading, all built on blockchain technology.
+  It leverages its own appchain and secure smart contracts for trustless trading and offers a native governance token, DYDX, for protocol governance and staking rewards.
+  The platform focuses on creating a fully decentralized and community-driven ecosystem, empowering users with efficient and transparent trading tools.
+
+gmx: |
+  GMX is a major spot and derivatives DEX that offers low swap fees and minimal price impact on trades.
+  It features unique multi-asset pools which generate earnings for liquidity providers through market making, swap fees, and leverage trading. The platform utilizes Chainlink Oracles and aggregates prices from major exchanges for dynamic pricing.
+  GMX caters to token holders, liquidity providers, and traders, offering various functionalities tailored to each group.
+
+hmx: |
+  HMX is a major derivatives DEX specializing in perpetual contracts, leveraging Layer 2 solutions for fast, economical, and secure trading.
+  It supports multi-chain and multi-asset trading with up to 100x leverage.
+  Users earn rewards in HMX tokens.
+
+apex-protocol: |
+  Apex Protocol is a derivatives DEX offering decentralized, non-custodial trading of cross-margined perpetual contracts.
+  It employs an order-book model with multi-chain support, combining a CEX-like experience with DEX security.
+  The platform allows up to 100x leverage trading and rewards users in APEX tokens.
+
+mux-protocol: |
+  MUX Protocol is a derivatives DEX facilitating transactions across multiple networks.
+  It includes fund management features for liquidity providers to earn from transaction fees.
+  The platform supports high leverage trading and rewards users in MUX tokens.
+
+hyperliquid: |
+  Hyperliquid is a derivatives DEX that lives on its own L1, offering high performance, deep liquidity, and low fees.
+  It supports trading across various assets and networks with up to 100x leverage, and users can earn rewards in HYPER tokens.
+
+vertex-protocol: |
+  Vertex Protocol is a major derivatives DEX allowing the creation and trading of synthetic assets on compatible EVMs.
+  It uses a vPeg mechanism for stability and scalability of synthetics.
+  Users can mint, trade, redeem assets, and earn rewards in VTX tokens.
+
+pika-protocol: |
+  Pika Protocol is a derivatives DEX that enables trading of crypto and non-crypto assets with leverage.
+  It supports assets with reliable price feeds and offers liquid staking, perpetual futures, and options.
+
+gtrade: |
+  gTrade by Gains Network is a derivatives DEX that enables trading of crypto and non-crypto assets with leverage.
+  The platform supports high leverage trading and rewards users in GNS tokens.
+
+apollox: |
+  ApolloX Finance is a derivatives DEX for cross-margined perpetual contracts, using an order-book model with multi-chain support.
+  It offers low fees, high liquidity, and risk management tools.
+  Trading is available with up to 100x leverage, and users earn APX tokens.
+
+kwenta: |
+  Kwenta is a derivatives DEX using Synthetix liquidity. It specialized in perpetual futures and options trading.
+  It offers exposure to various Synthetix-issued derivatives and advanced features via the Kwenta Smart Margin Wallet.
+
+synthetix: |
+  Synthetix is a decentralized liquidity provisioning protocol, serving as a unified liquidity backend for multiple DeFi protocols and front-end.
+  Users stake SNX tokens to collateralize synthetic assets, earning rewards and market yields.
+  It allows trading of synthetic assets and perpetual futures at oracle prices.
+
+vela-exchange: |
+  Vela Exchange is a derivatives DEX that allows for leveraged zero-slippage trading.
+  Deployed on L2s only, it offers reduced gas fees and latency.
+
+level-finance: |
+  Level Finance is a derivatives DEX that allows for leveraged zero-slippage trading.
+  Deployed on low cost L1s and L2s only, it offers reduced gas fees and latency.
+
+perpetual-protocol: |
+  Perpetual Protocol is a derivatives DEX that offers leveraged perpetual contract trading on various assets.
+  It uses a virtual AMM for liquidity and a staking mechanism for solvency, operating on Optimistic Ethereum.
+
+# structured finance
+vaultka: |
+  Vaultka is one of the first derivatives DEX liquidity provisionning optimizer.
+  Users can deposit on LP Optimization vaults or provide liquidity to its leverage pools in the form of stablecoin lending.
+  The platform incentivizes liquidity providers with its native token, VKA.
+
+jones-dao: |
+  Jones DAO is a yield optimizer offering vaults for one-click access to advanced strategies.
+  The platform was initially specialized in dopex option strategies, but pivoted towards These strategies enhance liquidity and capital efficiency in DeFi through yield-bearing tokens. The platform caters to users seeking hands-off management of their strategies, those preferring liquidity over token locking, and protocols aiming to earn additional yield on treasury positions.
+
+toros-finance: |
+  Toros Finance is a yield optimizer offering vaults for one-click access to advanced strategies.
+  It utilizes Dynamic Vaults - algorithmic strategies targeting specific payoffs, adaptable for improved returns while maintaining consistent market risk.
+  The platform, powered by dHEDGE, ensures each strategy and Vault is built on audited smart contracts, enhancing security and trust.
+
+neutra-finance: |
+  Toros Finance is a yield optimizer offering vaults for one-click access to advanced strategies.
+  It focuses on providing delta-hedged, sustainable investment strategies, making them easily accessible to all users.
+  The platform emphasizes performance, security, and user experience, allowing users to earn above-average returns on DeFi products with minimized risk. Neutra Finance's vaults handle returns optimization, rebalancing, and liquidation risk management.
+
+# staking/restaking/hyperstaking
+lido: |
+  Lido is a leading liquid staking solution that offers rewards for staked digital tokens.
+  It allows tokens to remain liquid and usable across various DeFi applications, enhancing their utility and earning potential.
+  Lido supports multiple Proof of Stake networks, enabling users to receive staked tokens, which are freely transferable and integrate with DeFi protocols for additional activities like lending and farming.
+  The protocol is notorious for issuing stETH for staked ETH, which is the most liquid staking derivative (LSD) in the DeFi ecosystem.
+
+rocket-pool: |
+  Rocket Pool is a decentralized Ethereum staking protocol.
+  It enables users to participate in Ethereum's Proof of Stake network by staking ETH, either as solo stakers or through a decentralized network of node operators.
+  Rocket Pool offers an accessible way for individuals and businesses to earn staking rewards, catering to both small and large stakers.
+  The protocol is notorious for issuing rETH for staked ETH, which is a highly liquid derivative (LSD) in the DeFi ecosystem.
+
+stakehound: |
+  StakeHound is a platform that bridges the gap between staking and DeFi.
+  It allows users to stake tokens from different networks and receive ERC-20 tokens that represent their stake and rewards.
+  These tokens can then be used in various DeFi applications and services.
+
+stakehouse: |
+  StakeHouse by Blockswap is a protocol designed for decentralized finance (DeFi) applications. It seems to focus on innovative solutions in the DeFi space, providing developers with tools to build new products and supporting the creation of Liquid Staking Derivatives (LSD) Networks.
+  StakeHouse also offers deep dives and educational resources to enhance understanding of its protocol.
+  The protocol issues dETH for staked ETH, liquid derivative (LSD) usable in the DeFi ecosystem.
+
+stader: |
+  Stader Labs is a non-custodial, smart contract-based liquid staking platform that enables users to earn staking rewards while accessing DeFi opportunities.
+  It supports various networks like Ethereum, Polygon, BNB Chain, and others, allowing users to stake their assets and earn rewards in network-specific tokens like ETHx, MaticX, and BNBx.
+  The protocol issues ETHx for staked ETH, highly liquid derivative (LSD) usable in the DeFi ecosystem.
+
+swell-network: |
+  Swell is a liquid staking protocol that helps users optimize yield in DeFi.
+  It allows users to stake ETH and receive swETH, a liquid staking receipt token that increases in value over time.
+  Users can also restake their swETH to other protocols and earn additional rewards and fees.
+
+liquid-collective: |
+  Liquid Collective is a decentralized liquid staking standard designed for institutional and enterprise use.
+  It offers a unified solution for liquid staking, aiming to address the liquidity challenges faced by institutional stakers.
+  The protocol includes smart contract software, service providers, and enterprise-grade security and compliance standards.
+  It differentiates itself through a focus on KYC/AML, API-first solutions, and standardized liquid staking tokens (LsTokens) to facilitate broad adoption.
+
+eigenlayer: |
+  Eigenlayer is a protocol on Ethereum that introduces restaking, allowing staked ETH to be used for securing additional protocols beyond Ethereum, in exchange for fees and rewards.
+  This enables staked ETH and liquid staked tokens like stETH, rETH, cbETH, and LsETH to be utilized more efficiently.
+  Restaking through Eigenlayer allows for a variety of uses, including data availability, decentralized sequencers, bridges, oracles, and MEV management, contributing to a vibrant ecosystem for builders and developers.
+
+prisma: |
+  Prisma Finance is a decentralized Ethereum protocol that uses liquid staking tokens (LSTs) to mint a stablecoin, mkUSD.
+  It incentivizes mkUSD on Curve and Convex Finance, allowing users to earn trading fees, CRV, CVX, and PRISMA on top of Ethereum staking rewards.
+  The protocol, based on Liquity, offers an immutable codebase and a DAO governing parameters and fees.
+  It aims to maximize the utility of LSTs while offering a stablecoin with reduced risks compared to others.
+
+frax-finance: |
+  Frax Finance offers a range of features within its stablecoin protocol.
+  It includes FRAX, a stablecoin partially backed by collateral and algorithmically stabilized; FPI, an inflation-indexed stablecoin; and frxETH, a liquid staking derivative of Ethereum. The protocol also features Fraxlend, a permissionless lending platform, Fraxswap for decentralized swaps, and Fraxferry for cross-chain transfers.
+  Governance is handled via the FXS token, with a community-driven system for rewards distribution.
+  The protocol emphasizes innovative stablecoin mechanics and efficient collateral management.
+
+cian: |
+  CIAN is a decentralized automation platform that streamlines complex crypto delta-neutral yield strategies.
+  It enables users to build, manage, and optimize strategies across multiple protocols, focusing on yield opportunities from Liquid Staking Tokens and Derivatives (LSDs/LSTs), Liquid Restaking Tokens (LRTs), and Real-World Assets (RWA).
+  The platform provides automation features to monitor and safeguard positions against liquidation risks, targeting both novice and experienced investors.
+
+unsheth: |
+  unshETH is a DeFi primitive focusing on ETH validator decentralization.
+  It fosters competition among ETH liquid staking protocols, promoting a more resilient, censorship-resistant, and accessible ETH ecosystem.
+  unshETH uses incentive engineering to distribute capital across the liquid staking derivative (LSD) ecosystem, emphasizing validator decentralization.
+  LSDfi, part of unshETH, allows markets on staking yields and validator risks, enabling novel DeFi applications like validator decentralization mining and yield speculation.

@@ -1,0 +1,163 @@
+symbol,name,slug,coinGeckoId,scale,weiPerUnit,nativeAddress,nativeNetwork
+USDC,USD Coin,ethereum-mainnet:usdc,usd-coin,6,1e6,0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48,ethereum-mainnet
+USDC.e,Bridged USD Coin,polygon-mainnet:usdc-e,usd-coin,6,1e6,0x2791bca1f2de4661ed88a30c99a7a9449aa84174,polygon-mainnet
+USDC,USD Coin,polygon-mainnet:usdc,usd-coin,6,1e6,0x3c499c542cef5e3811e1192ce70d8cc03d5c3359,polygon-mainnet
+USDC.e,Bridged USD Coin,optimism-mainnet:usdc-e,usd-coin,6,1e6,0x7f5c764cbc14f9669b88837ca1490cca17c31607,optimism-mainnet
+USDC,USD Coin,optimism-mainnet:usdc,usd-coin,6,1e6,0x0b2c639c533813f4aa9d7837caf62653d097ff85,optimism-mainnet
+USDC.e,Bridged USD Coin,arbitrum-mainnet-one:usdc-e,usd-coin,6,1e6,0xff970a61a04b1ca14834a43f5de4533ebddb5cc8,arbitrum-mainnet-one
+USDC,USD Coin,arbitrum-mainnet-one:usdc,usd-coin,6,1e6,0xaf88d065e77c8cc2239327c5edb3a432268e5831,arbitrum-mainnet-one
+USDC,USD Coin,base-mainnet:usdc,usd-coin,6,1e6,0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913,base-mainnet
+mcUSDC,Multichain Bridged USD Coin,fantom-mainnet-opera:mcusdc,usd-coin,6,1e6,0x04068da6c83afcfa0e13ba15a6696662335d5b75,fantom-mainnet-opera
+USDC.e,Bridged USD Coin,linea-mainner:usdc-e,usd-coin,6,1e6,0x176211869ca2b568f2a7d4ee941e073a821ee1ff,linea-mainnet
+USDC,USD Coin,avalanche-mainnet:usdc,usd-coin,6,1e6,0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e,avalanche-mainnet
+USDC.e,USD Coin,avalanche-mainnet:usdc-e,usd-coin,6,1e6,0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664,avalanche-mainnet
+USDC,USD Coin,kava-mainnet:usdc,usd-coin,6,1e6,0xfa9343c3897324496a05fc75abed6bac29f8a40f,kava-mainnet
+USDC,USD Coin,canto-mainnet:usdc,usd-coin,6,1e6,0x80b5a32e4f032b2a058b4f29ec95eefeeb87adcd,ethereum-mainnet
+USDC,USD Coin,moonbeam-mainnet:usdc,usd-coin,6,1e6,0x931715FEE2d06333043d11F658C8CE934aC61D0c,moonbeam-mainnet
+USDC,USD Coin,moonriver-mainnet:usdc,usd-coin,6,1e6,0xe3f5a90f9cb311505cd691a46596599aa1a0ad7d,moonriver-mainnet
+USDC,USD Coin,gnosis-chain-mainnet:usdc,usd-coin,6,1e6,0xddafbb505ad214d7b80b1f830fccc89b60fb7a83,gnosis-chain-mainnet
+USDC,USD Coin,zksync-era-mainnet:usdc,usd-coin,6,1e6,0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48,zksync-era-mainnet
+USDC,USD Coin,zkevm-mainnet:usdc,usd-coin,6,1e6,0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035,polygon-zkevm-mainnet
+USDC,USD Coin,mantle-mainnet:usdc,usd-coin,6,1e6,0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9,linea-mainnet
+USDC,USD Coin,scroll-mainnet:usdc,usd-coin,6,1e6,0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4,scroll-mainnet
+USDT,Binance Pegged USD,bnb-chain-mainnet:usdc,usd-coin,18,1e18,0x55d398326f99059fF775485246999027B3197955,bnb-chain-mainnet
+USDT,Tether USD,ethereum-mainnet:usdt,tether,6,1e6,0xdac17f958d2ee523a2206206994597c13d831ec7,ethereum-mainnet
+USDT,Tether USD,polygon-mainnet:usdt,tether,6,1e6,0xc2132d05d31c914a87c6611c10748aeb04b58e8f,polygon-mainnet
+USDT,Tether USD,optimism-mainnet:usdt,tether,6,1e6,0x94b008aa00579c1307b0ef2c499ad98a8ce58e58,optimism-mainnet
+USDT,Tether USD,arbitrum-mainnet-one:usdt,tether,6,1e6,0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9,arbitrum-mainnet-one
+USDT,Tether USD,fantom-mainnet-opera:usdt,tether,6,1e6,0x049d68029688eabf473097a2fc38ef61633a3c7a,fantom-mainnet-opera
+USDT,Tether USD,avalanche-mainnet:usdt,tether,6,1e6,0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7,avalanche-mainnet
+USDT.e,Tether USD,avalanche-mainnet:usdt,tether,6,1e6,0xc7198437980c041c805A1EDcbA50c1Ce5db95118,avalanche-mainnet
+USDT,Tether USD,kava-mainnet:usdt,tether,6,1e6,0x765277eebeca2e31912c9946eae1021199b39c61,kava-mainnet
+USDT,Tether USD,canto-mainnet:usdt,tether,6,1e6,0xd567b3d7b8fe3c79a1ad8da978812cfc4fa05e75,ethereum-mainnet
+USDT,Tether USD,moonbeam-mainnet:usdt,tether,6,1e6,0x8e70cd5b4ff3f62659049e74b6649c6603a0e594,moonbeam-mainnet
+USDT,Tether USD,moonriver-mainnet:usdt,tether,6,1e6,0xb44a9b6905af7c801311e8f4e76932ee959c663c,moonriver-mainnet
+USDT,Tether USD,gnosis-chain-mainnet:usdt,tether,6,1e6,0x4ecaba5870353805a9f068101a40e0f32ed605c6,gnosis-chain-mainnet
+USDT,Tether USD,zksync-era-mainnet:usdt,tether,6,1e6,0xdac17f958d2ee523a2206206994597c13d831ec7,zksync-era-mainnet
+USDT,Tether USD,zkevm-mainnet:usdt,tether,6,1e6,0x1e4a5963abfd975d8c9021ce480b42188849d41d,polygon-zkevm-mainnet
+USDT,Tether USD,mantle-mainnet:usdt,tether,6,1e6,0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE,mantle-mainnet
+USDT,Tether USD,linea-mainnet:usdt,tether,6,1e6,0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df,linea-mainnet
+BUSD,Binance USD,ethereum-mainnet:busd,binance-usd,18,1e18,0x4fabb145d64652a948d72533023f6e7a623c7c53,ethereum-mainnet
+BUSD,Binance USD,polygon-mainnet:busd,binance-usd,18,1e18,0x9c9e5fd8bbc25984b178fdce6117defa39d2db39,polygon-mainnet
+BUSD,Binance USD,optimism-mainnet:busd,binance-usd,18,1e18,0x9c9e5fd8bbc25984b178fdce6117defa39d2db39,optimism-mainnet
+BUSD,Binance USD,bnb-chain-mainnet:busd,binance-usd,18,1e18,0xe9e7cea3dedca5984780bafc599bd69add087d56,bnb-chain-mainnet
+BUSD,Binance USD,moonriver-mainnet:busd,binance-usd,18,1e18,0x5d9ab5522c64e1f6ef5e3627eccc093f56167818,moonriver-mainnet
+BUSD,Binance USD,moonbeam-mainnet:busd,binance-usd,18,1e18,0xa649325aa7c5093d12d6f98eb4378deae68ce23f,moonbeam-mainnet
+BUSD,Binance USD,avalanche-mainnet:busd,binance-usd,18,1e18,0x9c9e5fd8bbc25984b178fdce6117defa39d2db39,avalanche-mainnet
+BUSD,Binance USD,zksync-era-mainnet:busd,binance-usd,18,1e18,0x2039bb4116b4efc145ec4f0e2ea75012d6c0f181,zksync-era-mainnet
+BUSD,Binance USD,zkevm-mainnet:busd,binance-usd,18,1e18,0xdab529f40e671a1d4bf91361c21bf9f0c9712ab7,polygon-zkevm-mainnet
+DAI,DAI,ethereum-mainnet:dai,dai,18,1e18,0x6b175474e89094c44da98b954eedeac495271d0f,ethereum-mainnet
+DAI,DAI,polygon-mainnet:dai,dai,18,1e18,0x8f3cf7ad23cd3cadbd9735aff958023239c6a063,polygon-mainnet
+DAI,DAI,optimism-mainnet:dai,dai,18,1e18,0xda10009cbd5d07dd0cecc66161fc93d7c9000da1,optimism-mainnet
+DAI,DAI,arbitrum-mainnet-one:dai,dai,18,1e18,0xda10009cbd5d07dd0cecc66161fc93d7c9000da1,arbitrum-mainnet-one
+DAI,DAI,fantom-mainnet-opera:dai,dai,18,1e18,0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e,fantom-mainnet-opera
+DAI,DAI,bnb-chain-mainnet:dai,dai,18,1e18,0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3,bnb-chain-mainnet
+DAI,DAI,avalanche-mainnet:dai,dai,18,1e18,0xd586e7f844cea2f87f50152665bcbc2c279d8d70,avalanche-mainnet
+DAI.e,Bridged DAI,avalanche-mainnet:dai-e,dai,18,1e18,0xd586E7F844cEa2F87f50152665BCbc2C279D8d70,avalanche-mainnet
+DAI,DAI,kava-mainnet:dai,dai,18,1e18,0x765277eebeca2e31912c9946eae1021199b39c61,kava-mainnet
+DAI,DAI,moonbeam-mainnet:dai,dai,18,1e18,0x765277eebeca2e31912c9946eae1021199b39c61,moonbeam-mainnet
+DAI,DAI,moonriver-mainnet:dai,dai,18,1e18,0x80a16016cc4a2e6a2caca8a4a498b1699ff0f844,moonriver-mainnet
+DAI,DAI,gnosis-chain-mainnet:dai,dai,18,1e18,0xe91d153e0b41518a2ce8dd3d7944fa863463a97d,gnosis-chain-mainnet
+DAI,DAI,zksync-era-mainnet:dai,dai,18,1e18,0x6b175474e89094c44da98b954eedeac495271d0f,zksync-era-mainnet
+DAI,DAI,zkevm-mainnet:dai,dai,18,1e18,0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4,polygon-zkevm-mainnet
+DAI,DAI,linea-mainnet:dai,dai,18,1e18,0x4af15ec2a0bd43db75dd04e62faa3b8ef36b00d5,linea-mainnet
+DAI,DAI,scroll-mainnet:dai,dai,18,1e18,0xcA77eB3fEFe3725Dc33bccB54eDEFc3D9f764f97,scroll-mainnet
+DAI,DAI,base-mainnet:dai,dai,18,1e18,0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb,base-mainnet
+LUSD,Liquity USD,ethereum-mainnet:lusd,liquity-usd,18,1e18,0x5f98805A4E8be255a32880FDeC7F6728C6568bA0,ethereum-mainnet
+LUSD,Liquity USD,polygon-mainnet:lusd,liquity-usd,18,1e18,0x23001f892c0c82b79303edc9b9033cd190bb21c7,polygon-mainnet
+LUSD,Liquity USD,optimism-mainnet:lusd,liquity-usd,18,1e18,0xc40f949f8a4e094d1b49a23ea9241d289b7b2819,optimism-mainnet
+LUSD,Liquity USD,arbitrum-mainnet-one:lusd,liquity-usd,18,1e18,0x93b346b6bc2548da6a1e7d98e9a421b42541425b,arbitrum-mainnet-one
+LUSD,Liquity USD,zksync-era-mainnet:lusd,liquity-usd,18,1e18,0x503234f203fc7eb888eec8513210612a43cf6115,zksync-era-mainnet
+LUSD,Liquity USD,zkevm-mainnet:lusd,liquity-usd,18,1e18,0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4,polygon-zkevm-mainnet
+LUSD,Liquity USD,scroll-mainnet:lusd,liquity-usd,18,1e18,0xeDEAbc3A1e7D21fE835FFA6f83a710c70BB1a051,scroll-mainnet
+ETH,Ether,ethereum-mainnet:eth,ethereum,18,1e18,0x0000000000000000000000000000000000000000,ethereum-mainnet
+WETH,Wrapped Ether,ethereum-mainnet:weth,ethereum,18,1e18,0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2,ethereum-mainnet
+WETH,Wrapped Ether,polygon-mainnet:weth,ethereum,18,1e18,0x7ceb23fd6bc0add59e62ac25578270cff1b9f619,polygon-mainnet
+WETH,Wrapped Ether,optimism-mainnet:weth,ethereum,18,1e18,0x4200000000000000000000000000000000000006,optimism-mainnet
+WETH,Wrapped Ether,arbitrum-mainnet-one:weth,ethereum,18,1e18,0x82af49447d8a07e3bd95bd0d56f35241523fbab1,arbitrum-mainnet-one
+WETH,Wrapped Ether,fantom-mainnet-opera:weth,ethereum,18,1e18,0x74b23882a30290451A17c44f4F05243b6b58C76d,fantom-mainnet-opera
+WETH,Wrapped Ether,bnb-chain-mainnet:weth,ethereum,18,1e18,0x2170ed0880ac9a755fd29b2688956bd959f933f8,bnb-chain-mainnet
+WETH,Wrapped Ether,avalanche-mainnet:weth,ethereum,18,1e18,0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab,avalanche-mainnet
+WETH,Wrapped Ether,kava-mainnet:weth,ethereum,18,1e18,0xe3f5a90f9cb311505cd691a46596599aa1a0ad7d,kava-mainnet
+WETH,Wrapped Ether,canto-mainnet:weth,ethereum,18,1e18,0x5fd55a1b9fc24967c4db09c513c3ba0dfa7ff687,ethereum-mainnet
+WETH,Wrapped Ether,moonbeam-mainnet:weth,ethereum,18,1e18,0x30d2a9f5fdf90ace8c17952cbb4ee48a55d916a7,moonbeam-mainnet
+WETH,Wrapped Ether,moonriver-mainnet:weth,ethereum,18,1e18,0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c,moonriver-mainnet
+WETH,Wrapped Ether,gnosis-chain-mainnet:weth,ethereum,18,1e18,0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1,gnosis-chain-mainnet
+WETH,Wrapped Ether,zksync-era-mainnet:weth,ethereum,18,1e18,0x5aea5775959fbc2557cc8789bc1bf90a239d9a91,zksync-era-mainnet
+WETH,Wrapped Ether,zkevm-mainnet:weth,ethereum,18,1e18,0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9,polygon-zkevm-mainnet
+WETH,Wrapped Ether,mantle-mainnet:weth,ethereum,18,1e18,0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111,mantle-mainnet
+WETH,Wrapped Ether,linea-mainnet:weth,ethereum,18,1e18,0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f,linea-mainnet
+WETH,Wrapped Ether,scroll-mainnet:weth,ethereum,18,1e18,0x5300000000000000000000000000000000000004,scroll-mainnet
+WETH,Wrapped Ether,base-mainnet,ethereum,18,1e18,0x4200000000000000000000000000000000000006,base-mainnet
+WBTC,Wrapped BTC,ethereum-mainnet:wbtc,bitcoin,18,1e18,0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599,ethereum-mainnet
+WBTC,Wrapped BTC,polygon-mainnet:wbtc,bitcoin,18,1e18,0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6,polygon-mainnet
+WBTC,Wrapped BTC,optimism-mainnet:wbtc,bitcoin,18,1e18,0x68f180fcCe6836688e9084f035309E29Bf0A2095,optimism-mainnet
+sBTC,Synth BTC,optimism-mainnet:sbtc,sbtc,18,1e18,0x298B9B95708152ff6968aafd889c6586e9169f1D,optimism-mainnet
+WBTC,Wrapped BTC,arbitrum-mainnet-one:wbtc,bitcoin,18,1e18,0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f,arbitrum-mainnet-one
+WBTC,Wrapped BTC,fantom-mainnet-opera:wbtc,bitcoin,18,1e18,0x321162Cd933E2Be498Cd2267a90534A804051b11,fantom-mainnet-opera
+BTCB,Binance BTC,bnb-chain-mainnet:btcb,bitcoin,18,1e18,0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c,bnb-chain-mainnet
+WBTC.e,Wrapped BTC,avalanche-mainnet:wbtc,bitcoin,18,1e18,0x50b7545627a5162F82A992c33b87aDc75187B218,avalanche-mainnet
+BTC.b,Bridged BTC,avalanche-mainnet:btc-b,bitcoin,18,1e18,0x152b9d0FdC40C096757F570A51E494bd4b943E50,avalanche-mainnet
+WBTC,Wrapped BTC,kava-mainnet:wbtc,bitcoin,18,1e18,0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b,kava-mainnet
+WBTC,Wrapped BTC,moonbeam-mainnet:wbtc,bitcoin,18,1e18,0x30d2a9f5fdf90ace8c17952cbb4ee48a55d916a7,moonbeam-mainnet
+WBTC,Wrapped BTC,moonriver-mainnet:wbtc,bitcoin,18,1e18,0x6aB6d61428fde76768D7b45D8BFeec19c6eF91A8,moonriver-mainnet
+WBTC,Wrapped BTC,gnosis-chain-mainnet:wbtc,bitcoin,18,1e18,0x8e5bBbb09Ed1ebdE8674Cda39A0c169401db4252,gnosis-chain-mainnet
+WBTC,Wrapped BTC,zksync-era-mainnet:wbtc,bitcoin,18,1e18,0xBBeB516fb02a01611cBBE0453Fe3c580D7281011,zksync-era-mainnet
+WBTC,Wrapped BTC,zkevm-mainnet:wbtc,bitcoin,18,1e18,0xEA034fb02eB1808C2cc3adbC15f447B93CbE08e1,polygon-zkevm-mainnet
+WBTC,Wrapped BTC,mantle-mainnet:wbtc,bitcoin,18,1e18,0xCAbAE6f6Ea1ecaB08Ad02fE02ce9A44F09aebfA2,mantle-mainnet
+WBTC,Wrapped BTC,linea-mainnet:wbtc,bitcoin,18,1e18,0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4,linea-mainnet
+WBTC,Wrapped BTC,scroll-mainnet:wbtc,bitcoin,18,1e18,0x3C1BCa5a656e69edCD0D4E36BEbb3FcDAcA60Cf1,scroll-mainnet
+cbETH,Coinbase Wrapped Staked ETH,ethereum-mainnet:cbeth,coinbase-wrapped-staked-eth,18,1e18,0xBe9895146f7AF43049ca1c1AE358B0541Ea49704,ethereum-mainnet
+wBETH,Binance Wrapped Beacon ETH,ethereum-mainnet:wbeth,wrapped-beacon-eth,18,1e18,0xa2E3356610840701BDf5611a53974510Ae27E2e1,ethereum-mainnet
+stETH,Lido Staked ETH,ethereum-mainnet:steth,lido-staked-ether,18,1e18,0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84,ethereum-mainnet
+stETH,Lido Staked ETH,scroll-mainnet:steth,lido-staked-ether,18,1e18,0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32,scroll-mainnet
+wstETH,Wrapped Lido Staked ETH,ethereum-mainnet:wsteth,wrapped-steth,18,1e18,0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84,ethereum-mainnet
+wstETH,Wrapped Lido Staked ETH,scroll-mainnet:wsteth,wrapped-steth,18,1e18,0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32,scroll-mainnet
+rETH,RocketPool Staked ETH,ethereum-mainnet:reth,rocket-pool-eth,18,1e18,0xae78736Cd615f374D3085123A210448E74Fc6393,ethereum-mainnet
+rETH,RocketPool Staked ETH,scroll-mainnet:reth,rocket-pool-eth,18,1e18,0xae78736Cd615f374D3085123A210448E74Fc6393,scroll-mainnet
+rETH2,StakeWise Staked ETH,ethereum-mainnet:seth2,reth2,18,1e18,0xFe2e637202056d30016725477c5da089Ab0A043A,ethereum-mainnet
+ankrETH,Ankr Staked ETH,ethereum-mainnet:ankreth,ankr-staked-eth,18,1e18,0xE95A203B1a91a908F9B9CE46459d101078c2c3cb,ethereum-mainnet
+sETH,Syth ETH,ethereum-mainnet:seth,seth,18,1e18,0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb,ethereum-mainnet
+swETH,Swell Staked ETH,ethereum-mainnet:sweth,sweth,18,1e18,0xf951E335afb289353dc249e82926178EaC7DEd78,ethereum-mainnet
+ETHx,Stader Staked ETH,ethereum-mainnet:ethx,stader-ethx,18,1e18,0xA35b1B31Ce002FBF2058D22F30f95D405200A15b,ethereum-mainnet
+frxETH,Frax ETH,ethereum-mainnet:frxeth,frax-ether,18,1e18,0x5e8422345238f34275888049021821e8e08caa1f,ethereum-mainnet
+sfrxETH,Frax Staked ETH,ethereum-mainnet:sfrxeth,staked-frax-ether,18,1e18,0xac3e018457b222d93114458476f3e3416abbe38f,ethereum-mainnet
+mevETH,Manifold MEV Staked ETH,ethereum-mainnet:meveth,meveth,18,1e18,0xA35b1B31Ce002FBF2058D22F30f95D405200A15b,ethereum-mainnet
+FRAX,Frax,ethereum-mainnet:frax,frax,18,1e18,0x853d955acef822db058eb8505911ed77f175b99e,ethereum-mainnet
+sUSD,Synth USD,ethereum-mainnet:susd,susd,18,1e18,0x57Ab1ec28D129707052df4dF418D58a2D46d5f51,ethereum-mainnet
+MAI,Mai,optimism-mainnet:mai,mimatic,18,1e18,0x3b55e45fd6bd7d4724f5c47e0d1bcaedd059263e,optimism-mainnet
+DOLA,Dola,ethereum-mainnet:dola,dola-usd,18,1e18,0x865377367054516e17014ccded1e7d814edc9ce4,ethereum-mainnet
+FEI,Fei USD,ethereum-mainnet:fei,fei-usd,18,1e18,0x956f47f50a910163d8bf957cf5846d573e7f87ca,ethereum-mainnet
+USDP,Paxos Standard,ethereum-mainnet:usdp,paxos-standard,18,1e18,0x8e870d67f660d95d5be530380d0ec0bd388289e1,ethereum-mainnet
+LUSD,Liquity USD,ethereum-mainnet:lusd,liquity-usd,18,1e18,0x5f98805a4e8be255a32880fdec7f6728c6568ba0,ethereum-mainnet
+TUSD,True USD,ethereum-mainnet:tusd,true-usd,18,1e18,0000000000085d4780B73119B644AE5eCD22b376,ethereum-mainnet
+USD+,USD+,optimism-mainnet:usdplus,usd,18,1e18,73Cb180bF0521828D8849bc8cF2B920918E23032,optimism-mainnet
+USDD,Decentralized USD,ethereum-mainnet:usdd,usdd,18,1e18,0C10BF8Fcb7bF5412187A595aB97a3609160b5C6,ethereum-mainnet
+agEUR,Angle Euro,ethereum-mainnet:ageur,ageur,18,1e18,1a7e4E63778b4F12a199C062f3efDD288aFCBCE8,ethereum-mainnet
+EURC,EUR Coin,ethereum-mainnet:eurc,eurc,6,1e6,0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c,ethereum-mainnet
+EURT,Tether EUR,ethereum-mainnet:eurt,euro-tether,6,1e6,0xC581b735A1688071A1746c968e0798D642EDE491,ethereum-mainnet
+MNT,Mantle,mantle-mainnet:mntl,mantle,18,1e18,0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000,mantle-mainnet
+WMNT,Wrapped Mantle,mantle-mainnet:wmnt,mantle,18,1e18,0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8,mantle-mainnet
+MATIC,Polygon Matic,polygon-mainnet:matic,matic-network,18,1e18,0x0000000000000000000000000000000000000000,polygon-mainnet
+MATIC,Polygon Matic,zkevm-mainnet:matic,matic-network,18,1e18,0x0000000000000000000000000000000000000000,polygon-zkevm-mainnet
+WMATIC,Polygon Matic,zkevm-mainnet:wmatic,wmatic,18,1e18,0xa2036f0538221a77A3937F1379699f44945018d0,polygon-zkevm-mainnet
+WMATIC,Wrapped Matic,polygon-mainnet:wmatic,wmatic,18,1e18,0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270,polygon-mainnet
+stMATIC,Lido Staked Matic,polygon-mainnet:stmatic,lido-staked-matic,18,1e18,0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4,polygon-mainnet
+MATICX,Stader Staked Matic,polygon-mainnet:maticx,stader-maticx,18,1e18,0xfa68fb4628dff1028cfec22b4162fccd0d45efb6,polygon-mainnet
+stMATIC,Lido Staked Matic,zkevm-mainnet:stmatic,lido-staked-matic,18,1e18,0x83b874c1e09d316059d929da402dcb1a98e92082,polygon-zkevm-mainnet
+MATICX,Stader Staked Matic,zkevm-mainnet:maticx,stader-maticx,18,1e18,0xf9eD88937B2D82707d0eabd8C3D9Aa4870b714D3,polygon-zkevm-mainnet
+AVAX,Avalanche,avalanche-mainnet:avax,avalanche-2,18,1e18,FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z,avalanche-mainnet
+WAVAX,Wrapped Avax,avalanche-mainnet:wavax,wrapped-avax,18,1e18,0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7,avalanche-mainnet
+sAVAX,Benqi Staked Avax,avalanche-mainnet:savax,benqi-liquid-staked-avax,18,1e18,0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be,avalanche-mainnet
+WBNB,Wrapped Binance Coin,bnb-chain-mainnet:wbnb,wbnb,18,1e18,0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c,bnb-chain-mainnet
+FTM,Fantom,fantom-mainnet-opera:ftm,fantom,18,1e18,0x4E15361FD6b4BB609Fa63C81A2be19d873717870,fantom-mainnet-opera
+WFTM,Wrapped Fantom,fantom-mainnet-opera:wftm,wrapped-fantom,18,1e18,0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83,fantom-mainnet-opera
+OP,Optimism,optimism-mainnet:op,optimism,18,1e18,0x4200000000000000000000000000000000000042,optimism-mainnet
+ARB,Arbitrum,arbitrum-mainnet-one:arb,arbitrum,18,1e18,0x912CE59144191C1204E64559FE8253a0e49E6548,arbitrum-mainnet-one
+WCANTO,Wrapped Canto,canto-mainnet:wcanto,canto,18,1e18,0x826551890dc65655a0aceca109ab11abdbd7a07b,canto-mainnet
+WKAVA,Wrapped Kava,kava-mainnet:wkava,kava,18,1e18,0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b,kava-mainnet
+WXDAI,Wrapped xDai,gnosis-chain-mainnet:wxdai,xdai,18,1e18,0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d,gnosis-chain-mainnet
+GLMR,Glimmer,moonbeam-mainnet:glmr,moonbeam,18,1e18,0x0000000000000000000000000000000000000802,moonbeam-mainnet
+WGLMR,Wrapped Glimmer,moonbeam-mainnet:wglmr,moonbeam,18,1e18,0xAcc15dC74880C9944775448304B263D191c6077F,moonbeam-mainnet
+WMOVR,Wrapped Moonriver,moonriver-mainnet:wmovr,moonriver,18,1e18,0x98878B06940aE243284CA214f92Bb71a2b032B8A,moonriver-mainnet
+NOTE,Canto Note,canto-mainnet:note,note,18,1e18,0x4e71a2e537b7f9d9413d3991d37958c0b5e1e503,canto-mainnet

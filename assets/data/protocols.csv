@@ -1,0 +1,172 @@
+slug,types,networks,governanceToken,rewardTokens,coinGeckoId,coinMarketCapId,defiLlamaId,exponentialId,defiSafetyId
+instadapp,[defi_aggregator],,,,,,instadapp,,
+defi-saver,[defi_aggregator],,,,,,defisaver,,
+uniswap,[spot_exchange],,,,,,uniswap,Uniswap V3,Uniswap V3
+compound,[lending|borrowing],,,,,,compound,Compound V3,Compound
+balancer,[spot_exchange],,,,,,balancer,Balancer,Balancer V2
+venus,[lending|borrowing],,,,,,venus,Venus,Venus
+velodrome-finance,[spot_exchange],,,,,,velodrome,Velodrome,Velodrome
+synthetix,[derivatives_issuer|derivatives_exchange|staking],,,,,,synthetix,Synthetix,Synthetix
+frax-finance,[lending|borrowing|stablecoin_issuer|liquid_staking],,,,,,frax,Frax,Frax
+angle-protocol,[lending|borrowing|stablecoin_issuer],,,,,,angle,Angle,Angle Protocol
+badger-dao,[staking|yield_aggregator|derivatives_issuer],,,,,,badger-dao,Badger,BadgerDAO
+aura-finance,[yield_optimizer|liquidity_incentivization],,,,,,aura,Aura,Aura Finance
+stake-dao,[yield_aggregator],,,,,,stakedao,Stake DAO,StakeDAO
+beefy-finance,[yield_aggregator],,,,,,beefy,Beefy,Beefy.finance
+yearn-finance,[yield_aggregator],,,,,,yearn-finance,Yearn,Yearn
+autofarm,[yield_aggregator],,,,,,autofarm,Autofarm,AutoFarm
+circle,[stablecoin_issuer|bridge],,,,,,circle,,
+cctp,[stablecoin_issuer|bridge],,,,,,circle,,
+aave,[lending|borrowing],,,,,,aave,Aave V3,Aave V3
+stargate-finance,[infrastructure|bridge],,,,,,stargate,Stargate,Stargate
+sushi,[spot_exchange],,,,,,sushi,Sushi,SushiSwap
+pancakeswap,[spot_exchange|derivatives_exchange],,,,,,pancakeswap,PancakeSwap,PancakeSwap V2
+alpaca-finance,[yield_aggregator|spot_trading|derivatives_trading],,,,,,alpaca-finance,Alpaca,Alpaca Finance
+curve,[spot_exchange|staking],,,,,,curve-dex,Curve,Curve Finance
+convex-finance,[liquidity_incentivization|staking],,,,,,convex-finance,Convex,Convex
+benqi,[lending|borrowing],,,,,,benqi,Benqi,benQi
+abracadabra-money,[lending|borrowing|stablecoin_issuer],,,,,,abracadabra,Abracadabra,Abracadabra.money
+trader-joe,[spot_exchange],,,,,,trader-joe,Trader Joe V2,Trader Joe
+vector-finance,[yield_aggregator],,,,,,vector-finance,Vector,
+beethoven-x,[spot_exchange],,,,,,beethoven-x,Beethoven X,BeethovenX
+gmx,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,gmx,GMX,GMX
+gains-network,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,gains-network,Gains Network,Gains Network
+gtrade,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,gains-network,Gains Network,Gains Network
+vela-exchange,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,vela-exchange,Vela,
+vertex-protocol,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,vertex-protocol,Vertex,
+camelot-dex,[spot_exchange|launchpad],,,,,,camelot,Camelot,
+mai-finance,[lending|borrowing|stablecoin_issuer],,,,,,qidao,QiDAO,Mai Finance / QiDao
+pendle-finance,[liquid_staking|derivatives_issuer|derivatives_exchange],,,,,,pendle,Pendle,
+arrakis-finance,[automated_market_making],,,,,,arrakis-finance,Arrakis (G-UNI),Arrakis v2
+sturdy-finance,[lending|borrowing],,,,,,sturdy,Sturdy,
+moonwell,[lending|borrowing],,,,,,moonwell,,Moonwell
+stellaswap,[spot_exchange],,,,,,stellaswap,,StellaSwap
+makerdao,[stablecoin_issuer],,,,,,makerdao,Maker,MakerDAO
+inverse-finance,[lending|borrowing|stablecoin_issuer],,,,,,inverse-finance,,Inverse Finance
+fei-protocol,[stablecoin_issuer],,,,,,fei-protocol,,Rari Capital
+liquity,[lending|borrowing|stablecoin_issuer],,,,,,liquity,Liquity,Liquity
+overnight-finance,[yield_aggregator|structured_finance|stablecoin_issuer],,,,,,overnight-finance,Overnight,
+tron-dao,[infrastructure|stablecoin_issuer],,,,,,tron,,
+perpetual-protocol,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,perpetual-protocol,Perpetual,Perpetual Protocol
+dydx,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,dydx,dYdX,dYdX
+level-finance,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,level-finance,Level,
+mux-protocol,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,mux-protocol,,
+pika-protocol,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,pika-protocol,Pika,
+kwenta,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,kwenta,Kwenta,
+quickswap,[spot_exchange],,,,,,quickswap,QuickSwap V3,Quickswap
+biswap,[spot_exchange],,,,,,biswap,Biswap,Biswap
+spiritswap,[spot_exchange],,,,,,spiritswap,SpiritSwap,SpiritSwap
+spookyswap,[spot_exchange],,,,,,spookyswap,SpookySwap,SpookySwap
+dodo,[spot_exchange],,,,,,dodo,,DODO Exchange V2
+cream-finance,[lending|borrowing],,,,,,cream-finance,,
+maverick-protocol,[automated_market_making],,,,,,maverick-protocol,,
+gamma-strategies,[automated_market_making],,,,,,gamma,,
+tokemak,[automated_market_making],,,,,,tokemak,Tokemak,Tokemak
+euler-finance,[automated_market_making],,,,,,euler,Euler,Euler Finance
+truefi,[lending|structured_finance|real_world_assets],,,,,,truefi,TrueFi,TrueFi V4
+maple-finance,[lending|structured_finance|real_world_assets],,,,,,maple,Maple,Maple V2.0
+clearpool,[lending|structured_finance|real_world_assets],,,,,,clearpool,Clearpool,
+gearbox-protocol,[lending|borrowing],,,,,,gearbox,Gearbox,Gearbox Protocol
+jones-dao,[structured_finance],,,,,,jones-dao,Jones DAO,
+idle-finance,[structured_finance|yield_aggregator],,,,,,idle,Idle,Idle v4
+ribbon-finance,[derivatives_issuer|structured_finance],,,,,,ribbon-finance,Ribbon,Ribbon Finance
+conic-finance,[yield_optimization],,,,,,conic-finance,,
+gnd-protocol,[structured_finance|yield_aggregator],,,,,,gnd-protocol,,
+gmd-protocol,[structured_finance|yield_aggregator],,,,,,gmd-protocol,,
+savvy,[structured_finance],,,,,,savvy,,
+lodestar-finance,[lending|borrowing],,,,,,lodestar-finance,,
+zkbob,[privacy|stablecoin_issuer],,,,,,zkbob,,
+manifold,[infrastructure|staking],,,,,,manifold-finance,Manifold,
+raft,[staking|stablecoin_issuer],,,,,,raft,Raft,
+morpho-protocol,[lending|borrowing],,,,,,morpho,Morpho Aave V3,Morpho
+index-coop,[structured_finance|yield_aggregator],,,,,,index-coop,Index Coop,
+toros-finance,[structured_finance|spot_trading|derivatives_trading],,,,,,toros,,dHEDGE v2
+neutra-finance,[structured_finance|spot_trading|derivatives_trading],,,,,,neutra-finance,,
+goldfinch,[lending|structured_finance|real_world_assets],,,,,,goldfinch,Goldfinch,Goldfinch
+paxos,[stablecoin_issuer],,,,,,paxos,,
+brahma,[structured_finance|yield_aggregator],,,,,,brahma,,
+radiant-capital,[lending|borrowing],,,,,,radiant,Radiant,
+premia-finance,[derivatives_issuer|structured_finance],,,,,,premia,,Premia Finance
+lyra-finance,[derivatives_issuer|structured_finance],,,,,,lyra,Lyra,
+equilibria,[yield_optimizer|structured_finance],,,,,,equilibria,,
+spectra,[liquid_staking|derivatives_issuer|derivatives_exchange],,,,,,spectra,,
+hmx,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,hmx,,
+hegic,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,hegic,,Hegic V8888
+dolomite,[lending|borrowing],,,,,,dolomite,Dolomite,
+hyperliquid,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,hyperliquid,,
+perennial,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,perennial,,
+sonne-finance,[lending|borrowing],,,,,,sonne-finance,Sonne,
+extra-finance,[lending|borrowing],,,,,,extra-finance,,
+exactly,[lending|borrowing],,,,,,exactly,Exactly,Exactly Protocol
+uxd-protocol,[stablecoin_isser|structured_finance],,,,,,uxd,,
+flux-finance,[lending|borrowing],,,,,,flux-finance,,
+tarot,[yield_optimizer],,,,,,tarot,Tarot,Tarot
+tangible,[stablecoin_isser|structured_finance|real_world_assets],,,,,,tangible,Tangible,
+lido,[liquid_staking|stablecoin_issuer],,,,,,lido,Lido,Lido
+ankr,[liquid_staking|stablecoin_issuer],,,,,,ankr,Ankr,Ankr
+rocket-pool,[liquid_staking|stablecoin_issuer],,,,,,rocket-pool,Rocket Pool,RocketPool
+liquid-collective,[liquid_staking|stablecoin_issuer],,,,,,liquid-collective,,
+eigenlayer,[liquid_staking|stablecoin_issuer],,,,,,eigenlayer,,EigenLayer
+stader,[liquid_staking|stablecoin_issuer],,,,,,stader,Stader (MaticX),
+swell-network,[liquid_staking|stablecoin_issuer],,,,,,swell,,
+stakehouse,[liquid_staking|stablecoin_issuer],,,,,,stakehouse,,
+cian,[liquid_staking|stablecoin_issuer],,,,,,cian,,
+unsheth,[liquid_staking|stablecoin_issuer],,,,,,unsheth,unshETH,
+paraswap,[spot_exchange|liquidity_aggregator],,,,,,paraswap,,ParaSwap
+0x-protocol,[liquidity_aggregator|staking],,,,,,0x,,
+1inch-network,[liquidity_aggregator|spot_exchange],,,,,,1inch-network,1inch,1inch
+cow-swap,[liquidity_aggregator|spot_exchange],,,,,,cow-swap,,Cowswap
+kyber-network,[liquidity_aggregator|spot_exchange],,,,,,kyberswap,KyberSwap,Kyber Network 3.0
+kyberswap,[liquidity_aggregator|spot_exchange],,,,,,kyberswap,KyberSwap,Kyber Network 3.0
+open-ocean,[liquidity_aggregator|spot_exchange],,,,,,openocean,OpenOcean,OpenOcean
+hashflow,[liquidity_aggregator|spot_exchange],,,,,,hashflow,Hashflow,Hashflow
+dln,[infrastructure|bridge|spot_exchange],,,,,,,,
+wormhole,[infrastructure|bridge],,,,,,wormhole,,
+connext-nework,[infrastructure|bridge],,,,,,connext,Connext,Connext
+across-protocol,[infrastructure|bridge],,,,,,across,Across,Across
+portal,[infrastructure|bridge],,,,,,portal,Portal,Portal
+debridge,[infrastructure|bridge|spot_exchange],,,,,,debridge,,
+layerzero,[infrastructure|bridge],,,,,,layerzero,,
+axelar,[infrastructure|bridge],,,,,,axelar,,
+celer-network,[infrastructure|bridge],,,,,,cbridge,,
+cbridge,[infrastructure|bridge],,,,,,cbridge,,
+hop-exchange,[infrastructure|bridge],,,,,,hop-protocol,Hop,Hop
+synapse-protocol,[infrastructure|bridge],,,,,,synapse,Synapse,Synapse
+hyperlane,[infrastructure|bridge],,,,,,hyperlane,,
+chainflip,[infrastructure|bridge],,,,,,chainflip,,
+symbiosis,[infrastructure|bridge],,,,,,symbiosis,,
+blast-api,[infrastructure],,,,,,,,
+ankr,[infrastructure],,,,,,,,
+omnia,[infrastructure],,,,,,,,
+pi-network,[infrastructure],,,,,,,,
+tenderly,[infrastructure],,,,,,,,
+alchemy,[infrastructure],,,,,,,,
+infura,[infrastructure],,,,,,,,
+flashbots,[infrastructure],,,,,,flashbots,,
+lifi,[infrastructure|bridge_aggregator|liquidity_aggregator],,,,,,,,
+socket,[infrastructure|bridge_aggregator|liquidity_aggregator],,,,,,,,
+squid,[infrastructure|bridge_aggregator|liquidity_aggregator],,,,,,,,
+rocketx,[infrastructure|bridge_aggregator|liquidity_aggregator],,,,,,,,
+helio,[stablecoin_issuer|lending|borrowing],,,,,,helio-protocol,,
+matrixdock,[lending|structured_finance|real_world_assets],,,,,,matrixdock,,
+stusdt,[lending|structured_finance|real_world_assets],,,,,,stusdt,,
+centrifuge,[lending|structured_finance|real_world_assets],,,,,,centrifuge,,
+openeden,[lending|structured_finance|real_world_assets],,,,,,openeden-t-bills,,
+backed,[lending|structured_finance|real_world_assets],,,,,,backedfi,,
+credix,[lending|structured_finance|real_world_assets],,,,,,credix,,
+umami,[structured_finance|derivatives_trading],,,,,,umami-finance,Umami,
+range-protocol,[automated_market_making|yield_aggregator],,,,,,range-protocol,,
+syncswap,[spot_exchange],,,,,,syncswap,,
+izumi,[automated_market_making|spot_exchange],,,,,,izumi-finance,,
+ambient,[automated_market_making|spot_exchange],,,,,,ambient,,
+apex-protocol,[derivatives_issuer|derivatives_exchange|structured_finance],,,,,,apex-protocol,,
+spark,[lending|borrowing],,,,,,spark,,
+silo-finance,[lending|borrowing],,,,,,silo-finance,,
+aftermath-finance,[spot_exchange|derivatives_exchange|structured_finance],,,,,,aftermath-finance,,
+wombat-exchange,[spot_exchange|staking],,,,,,wombat-exchange,,
+agave-finance,[lending|borrowing],,,,,,agave,,
+seamless-protocol,[lending|borrowing],,,,,,seamless-protocol,,
+kinza-finance,[lending|borrowing],,,,,,kinza-finance,,
+lendle,[lending|borrowing],,,,,,lendle,,
+zerolend,[lending|borrowing],,,,,,zerolend,,
+layerbank,[lending|borrowing],,,,,,layerbank,,

@@ -1,0 +1,3 @@
+name,auditor,dateStart,dateStop,status,events,findings,description,findingsBySeverity
+Omniscia v1 Audit,Omniscia,1679692800,1680729600,PENDING,,,Waiting for governance to be deployed,{}
+Hexens v1 Audit,Hexens,1678387200,1679856000,SUCCESS,,,Audit campaign lead by Hexens from March to May 2023 covering all v1 contracts but strategies and back-end pentesting,{}

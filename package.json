@@ -1,0 +1,14 @@
+{
+  "name": "astrolab-assets",
+  "version": "1.0.1",
+  "description": "Astrolab DAO's public, static assets",
+  "main": "index.js",
+  "repository": "https://github.com/AstrolabDAO/assets",
+  "author": "contact@astrolab.fi",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

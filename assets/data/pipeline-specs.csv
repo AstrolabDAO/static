@@ -1,0 +1,5 @@
+name,description,type,task,occurenceType,value,runImmediately,preventOverrun,options,successCondition,persistent,saveResult,timeoutSec,retryAfterSec,maxRetry,passResultIfRecurrent,waitForSuccess,waitForFailure,waitForError,onSuccess,onFailure,onError
+pipe:keeper:crate:allocate,Crate allocation pipeline,pipeline,,date,0,false,true,[],res?.length,true,true,7200,,,false,[],[],[],[],[],[]
+pipe:keeper:crate:updateChainDebt,update crates sharePrice with allocators data,pipeline,,date,0,false,true,[],res?.length,true,true,7200,,,false,[],[],[],[],[],[]
+pipe:keeper:crate:liquidate,Crate liquidation pipeline,pipeline,,date,0,false,true,[],res?.length,true,true,7200,,,false,[],[],[],[],[],[]
+pipe:dummy-1,Dummy pipeline,pipeline,,date,0,false,true,[],res?.length,true,true,7200,60,2,false,[],[],[],[],[],[]

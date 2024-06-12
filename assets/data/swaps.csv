@@ -1,0 +1,4 @@
+slug,name,nativeAddress,nativeNetwork,status
+bnb-chain-mainnet:usdc-elb,bnb-chain-mainnet:usdc-elb,0x260e988a978cc53b3679c63abe6f307225ff1f69,bnb-chain-mainnet,active
+arbitrum-mainnet-one:usdc-elb,arbitrum-mainnet-one:usdc-elb,0xE9541F53E34189015Bd742cfa2f2D49133E1C963,arbitrum-mainnet-one,active
+arb-local:usdc-elb,arb-local:usdc-elb,0xC498b3AC0328d05de7Bb633Cde5f140f0B0E52B4,arbitrum-local,active
