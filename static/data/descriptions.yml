@@ -1,82 +1,65 @@
-# strategies
-stargate-metastable: |
+stargate-optimizer: |
   Algorithmically provides liquidity to Stargate stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-hop-metastable: |
+hop-optimizer: |
   Algorithmically provides liquidity to Hop stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-aave-v3-metastable: |
+aave-v3-optimizer: |
   Algorithmically provides liquidity to AAVE V3 stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-compound-v3-metastable: |
+compound-v3-optimizer: |
   Algorithmically provides liquidity to Coumpound V3 stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-venus-metastable: |
+venus-optimizer: |
   Algorithmically provides liquidity to Venus stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-agave-metastable: |
+agave-optimizer: |
   Algorithmically provides liquidity to Agave stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-lodestar-metastable: |
+lodestar-optimizer: |
   Algorithmically provides liquidity to Lodestar stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-sonne-metastable: |
+sonne-optimizer: |
   Algorithmically provides liquidity to Sonne stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-benqi-metastable: |
+benqi-optimizer: |
   Algorithmically provides liquidity to Benqi stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-moonwell-metastable: |
+moonwell-optimizer: |
   Algorithmically provides liquidity to Moonwell stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-toros-metastable: |
+toros-optimizer: |
   Algorithmically provides liquidity to Toros stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-vaultka-metastable: |
+vaultka-optimizer: |
   Algorithmically provides liquidity to Vaultka stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-balancer-metastable: |
+balancer-optimizer: |
   Algorithmically provides liquidity to Balancer stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-curve-metastable: |
+curve-optimizer: |
   Algorithmically provides liquidity to Curve stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-wombat-metastable: |
+wombat-optimizer: |
   Algorithmically provides liquidity to Wombat stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
-gamma-metastable: |
+gamma-optimizer: |
   Algorithmically provides liquidity to Gamma stable pools.
-
   Claiming of reward tokens, rebalancing and compounding are automated.
 
 # protocols

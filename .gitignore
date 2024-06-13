@@ -1,0 +1,9 @@
+index.html
+.env
+*.env
+static/data/*.json
+__pycache__
+.DS_Store
+.vscode
+.idea
+*.lock

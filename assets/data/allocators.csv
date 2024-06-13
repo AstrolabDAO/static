@@ -1,8 +1,0 @@
-slug,name,nativeAddress,nativeNetwork,status
-arbitrum-mainnet-one:home-allocator,arbitrum-mainnet-one:home-allocator,0x4abd5ED0D8c975068eb27f1959390322AeB9535c,arbitrum-mainnet-one,active
-bnb-testnet:home-allocator,bnb-testnet:home-allocator,0x120c62cC8EaE0F131050CB627c00988D7567Ca87,bnb-chain-testnet,active
-avax-testnet:remote-allocator,avax-testnet:remote-allocator,0x2a1b6428c3a8fcf4803eb9ee9d65f398e587fb51,avalanche-testnet-fuji,active
-bnb-chain-mainnet:home-allocator,bnb-chain-mainnet:home-allocator,0xad547eb74984f59b225f288a46e38123d6a94152,bnb-chain-mainnet,active
-avalanche-mainnet:remote-allocator,avalanche-mainnet:remote-allocator,0x508d95f04cb61a1ae47dcf373bc746f0b12f8e54,avalanche-mainnet,active
-local:home-allocator,local:home-allocator,0x34a72309Ff32e11BF2D35C92365797EcC2dF2887,arbitrum-local,active
-optimism-mainnet:remote-allocator,optimism-mainnet:remote-allocator,0x49b42282462053Dd0c638834D93e6754B829416D,optimism-mainnet,active

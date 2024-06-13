@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Index of {{ directory }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { font-family: monospace; background-color: #111; color: #eee; margin: 0;}
+.table-container { margin: 14px; margin-top: 60px; }
+table { border-collapse: collapse; width: 100%; border-spacing: 0; }
+th, td { padding: 6px; text-align: left; }
+tr { border-bottom: 1px solid #666; }
+th {
+  cursor: pointer;
+  position: sticky;
+  line-height: 30px;
+  border-bottom: 2px solid #666;
+  background-color: #111;
+  top: 60px;
+  z-index: 1;
+}
+a { color: #1f9cef; }
+a:visited { color: #e413e4; }
+h1 { margin: 0; font-size: 18px; font-weight: 600; }
+header { position: fixed; top: 0; z-index: 10; padding: 20px; background-color: #111; border-bottom: #666; width: 100%; display: flex; align-items: center; }
+thead { font-size: 16px; }
+footer { margin: 20px 14px; }
+</style>
+</head>
+<body>
+  <header>
+    <svg style="fill: #eee; width: 120px; margin-bottom: 7px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1391 256"><path d="M283 117q0 7 10 12t25 8l28 9q14 6 24 18 10 13 10 32 0 29-22 44-21 16-53 16-58 0-79-45l38-21c11 15 22 22 41 22q26 0 26-16 0-7-10-12t-24-8-29-10q-14-5-24-17-10-13-10-31 0-27 20-43 21-16 51-16 23 0 42 10t29 29l-38 21c-7-10-19-17-33-17q-9 0-16 4-6 4-6 11m309-58h-48v197h48V145c0-43 52-40 52-40V59c-19 0-37 4-52 13zm-82 46h-52v87c0 9 7 16 16 16h36v48h-41c-33 0-59-27-59-59V26l48-26v59h52zm371 151V0h48v256z"/><path fill-rule="evenodd" d="M150 59h48v197h-48v-14A99 99 0 0 1 0 157a99 99 0 0 1 150-84zM99 208c28 0 51-23 51-51s-23-50-51-50-51 22-51 50 23 51 51 51M1106 59h49v197h-49v-14a99 99 0 0 1-149-85 99 99 0 0 1 149-84zm-50 149c28 0 50-23 50-51s-22-50-50-50-51 22-51 50 23 51 51 51M1240 0h-48v256h48v-14a99 99 0 0 0 150-85 99 99 0 0 0-150-84zm51 208c-28 0-51-23-51-51s23-50 51-50a50 50 0 1 1 0 101" clip-rule="evenodd"/><path d="M780 201c-21 11-45 7-61-8l-43 25c30 38 84 50 128 25 43-25 61-78 43-123l-43 24c5 22-4 45-24 57m-75-32c-6-21 3-45 24-56 20-12 45-8 61 7l43-25c-31-38-85-49-129-24s-61 78-42 123z"/></svg>
+    <h1>{{ directory }}</h1>
+  </header>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th data-column="name">Name  </th>
+          <th data-column="extension">Ext  </th>
+          <th data-column="size">Size  </th>
+          <th data-column="modified">Modified  </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>📁 <a href="{{ prev_route }}">../</a></td><td>folder</td><td>--</td><td>--</td></tr>
+        {{ file_rows }}
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    <div id="copyright"></div>
+  </footer>
+</body>
+<script>
+const sortStateRegex = /[\u{1F300}-\u{1F6FF}\u{1F900}-\u{1F9FF}\u{1FA70}-\u{1FAFF}<>]/gu;
+
+function compareDates(a, b) {
+  const aDate = new Date(a.replace(' ', 'T')); // Convert to ISO format
+  const bDate = new Date(b.replace(' ', 'T'));
+  return aDate - bDate;
+}
+
+function compareHumanizedSizes(a, b) {
+  const units = { b: 1, kb: 1024, mb: 1024 ** 2, gb: 1024 ** 3, tb: 1024 ** 4};
+  const aMatch = a.match(/^([\d.]+)\s*([a-z]+)$/);
+  const bMatch = b.match(/^([\d.]+)\s*([a-z]+)$/);
+
+  if (aMatch && bMatch) {
+    const aSize = parseFloat(aMatch[1]) * units[aMatch[2]];
+    const bSize = parseFloat(bMatch[1]) * units[bMatch[2]];
+    return aSize - bSize;
+  } else {
+    return a.localeCompare(b);
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const hs = document.querySelectorAll('th')
+  hs.forEach(h => {
+    let order = 'initial'; // Track sort order per column
+
+    h.addEventListener('click', () => {
+      const table = h.closest('table');
+      const tbody = table.querySelector('tbody');
+
+      // Get all rows EXCEPT the first one
+      const firstRow = tbody.querySelector('tr');
+      const rows = Array.from(tbody.querySelectorAll('tr')).slice(1); // Skip the first row
+
+      const i = Array.from(h.parentNode.children).indexOf(h);
+      const type = h.dataset.column;
+
+      // Cycle through sort orders: initial -> ascending -> descending -> initial
+      order = order === 'initial' ? 'ascending' : order === 'ascending' ? 'descending' : 'initial';
+
+      rows.sort((a, b) => {
+        const va = a.cells[i].textContent.trim().toLowerCase();
+        const vb = b.cells[i].textContent.trim().toLowerCase();
+        let result;
+
+        if (type === 'size') {
+          result = compareHumanizedSizes(va, vb);
+        } else if (type === 'modified') {
+          result = compareDates(va, vb);
+        } else {
+          result = va.localeCompare(vb);
+        }
+
+        // Reverse the result if the sort order is descending
+        return order === 'descending' ? -result : result;
+      });
+
+      tbody.innerHTML = firstRow.outerHTML; // Re-add the first row
+      rows.forEach(row => tbody.appendChild(row));
+
+      // Update emoji in header to reflect sort order
+      hs.forEach(_h => _h.textContent = _h.textContent.replace(sortStateRegex, '')); // Remove existing emojis
+      h.textContent += order === 'ascending' ? '\u{1F446}' : order === 'descending' ? '\u{1F447}' : '<>';
+    });
+  });
+});
+
+document.getElementById('copyright').innerHTML
+  = `&copy; Astrolab DAO (2021-${new Date().getFullYear()})`;
+</script>
+</html>
