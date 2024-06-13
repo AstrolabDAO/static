@@ -62,7 +62,7 @@ def humanize_bytes(size, precision=2):
 def create_index_html(directory, template):
   files = os.listdir(directory)
   files.sort(key=lambda f: (os.path.isdir(os.path.join(directory, f)), -os.path.getsize(os.path.join(directory, f)), f.lower()))  # Sort folders first, then by size desc, then name asc
-  index_dir = "./static" + re.split("/static", directory, maxsplit=1)[1]
+  index_dir = "./static" + directory.rsplit("/static", maxsplit=1)[1]
 
   file_rows = ""
   for file in files:
