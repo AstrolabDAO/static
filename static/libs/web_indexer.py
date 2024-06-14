@@ -42,7 +42,7 @@ EXT_BY_TYPE = {
   "video": {".mp4", ".avi", ".mkv", ".webm", ".mov", ".flv", ".vob", ".ogv", ".ogg", ".drc",
             ".mng", ".qt", ".wmv", ".yuv", ".rm", ".rmvb", ".viv", ".asf", ".amv", ".m4p",
             ".m4v", ".mpg", ".mp2", ".mpeg", ".mpe", ".mpv", ".m2v", ".svi", ".3gp", ".3g2",
-            ".mxf", ".roq", ".nsv", ".f4v", ".f4p", ".f4a", ".f4b", ".mts", ".m2ts", ".ts",
+            ".mxf", ".roq", ".nsv", ".f4v", ".f4p", ".f4a", ".f4b", ".mts", ".m2ts",
             ".divx", ".xvid", ".vcd", ".svcd"},
   "config": {".yaml", ".yml", ".toml", ".cfg", ".ini", ".env", ".conf", ".properties"},
   "code": {".py", ".js", ".ts", ".java", ".c", ".cpp", ".rs", ".go", ".h", ".hpp", ".html",
