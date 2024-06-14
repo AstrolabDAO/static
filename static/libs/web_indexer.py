@@ -9,6 +9,7 @@ import requests
 EXT_EMOJIS = {
   "folder": "📁",
   "archive": "📦",
+  "licence": "⚖️",
   "image": "🖼️",
   "3d": "🕸️",
   "font": "🇦",
@@ -24,7 +25,8 @@ EXT_EMOJIS = {
 }
 
 EXT_BY_TYPE = {
-  "archive": {".zip", ".gz", ".tar", ".7z", ".rar", ".bz2", ".lz"},
+  "archive": {".zip", ".gz", ".tar", ".7z", ".rar", ".bz2", ".lz", ".xz", ".z", ".tar.gz", ".tar.bz2", ".tar.xz", ".tar.z"},
+  "licence": {".lic", "licence", ".license", "licence.md", "licence.txt", "licence.rtf", "copying", "copying.md", "copying.txt", "copying.rtf", "copyright", "copyright.md", "copyright.txt", "copyright.rtf"},
   "image": {".jpg", ".jpeg", ".bmp", ".png", ".svg", ".ps", ".lottie", ".riv",
             ".psd", ".gif", ".tiff", ".webp", ".ico", ".jxr", ".heic", ".bpg", ".avif"},
   "3d": {".glsl", ".gltf", ".obj", ".fbx", ".stl", ".amf", ".stp"},
@@ -61,8 +63,9 @@ def get_type_and_emoji(filename):
   if os.path.isdir(filename):
     return "folder", EXT_EMOJIS["folder"]
   ext = os.path.splitext(filename)[1].lower()
+  basename = os.path.basename(filename).lower()
   for file_type, extensions in EXT_BY_TYPE.items():
-    if ext in extensions:
+    if ext in extensions or basename in extensions:
       return file_type, EXT_EMOJIS[file_type]
   return "???", EXT_EMOJIS["text"]
 
