@@ -126,7 +126,7 @@ def generate_index_files(root, git_root="/", parent=None, template=None, templat
   if not template:
     is_root = True
     if template_path.startswith("http"):
-      tpl = requests.get(template_path) # eg. https://cdn.astrolab.fi/libs/index_tpl.html
+      tpl = requests.get(template_path).text # eg. https://cdn.astrolab.fi/libs/index_tpl.html
     else:
       template_path = (Path(__file__).parent / template_path) if not template_path.startswith("/") else template_path
       with open(template_path, "r") as f:
