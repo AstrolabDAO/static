@@ -20,6 +20,7 @@ th {
 }
 a { color: #1f9cef; }
 a:visited { color: #e413e4; }
+.icon { font-size: 14px; display: inline-block; min-width: 26px; }
 h1 { margin: 0; font-size: 18px; font-weight: 600; }
 header { position: fixed; top: 0; z-index: 10; padding: 20px; background-color: #111; border-bottom: #666; width: 100%; display: flex; align-items: center; }
 thead { font-size: 16px; }
@@ -35,14 +36,15 @@ footer { margin: 20px 14px; }
     <table>
       <thead>
         <tr>
-          <th data-column="name">Name  </th>
-          <th data-column="extension">Ext  </th>
+          <th data-column="name">File  </th>
+          <th data-column="extension">Alt  </th>
+          <th data-column="extension">Type  </th>
           <th data-column="size">Size  </th>
           <th data-column="modified">Modified  </th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>📁 <a href="{{ prev_route }}">../</a></td><td>folder</td><td>--</td><td>--</td></tr>
+        <tr><td><span class="icon">📁</span><a href="{{ prev_route }}">../</a></td><td>--</td><td>folder</td><td>--</td><td>--</td></tr>
         {{ file_rows }}
       </tbody>
     </table>
