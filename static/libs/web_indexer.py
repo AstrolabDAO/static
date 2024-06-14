@@ -59,10 +59,11 @@ def humanize_bytes(size, precision=2):
     precision = 0
   return f"{size:.{precision}f}{power_labels[n]}b"
 
-def create_index_html(directory, template):
+def create_index_html(directory, parent, template):
   files = os.listdir(directory)
   files.sort(key=lambda f: (os.path.isdir(os.path.join(directory, f)), -os.path.getsize(os.path.join(directory, f)), f.lower()))  # Sort folders first, then by size desc, then name asc
-  index_dir = "./static" + directory.rsplit("/static", maxsplit=1)[1]
+  index_root = f"./{parent}"
+  index_dir = index_root + str(directory).rsplit(f"{parent}", maxsplit=1)[1]
 
   file_rows = ""
   for file in files:
@@ -81,8 +82,8 @@ def create_index_html(directory, template):
 
   print(f"Creating index file: {index_dir}")
   prev = "./index.html"
-  if index_dir != "./static":
-    prev = "." + prev # not root
+  if index_dir != index_root:
+    prev = "." + prev
   html_content = template.render(prev_route=prev, directory=index_dir, file_rows=file_rows)
 
   path = os.path.join(directory, "index.html")
@@ -90,23 +91,32 @@ def create_index_html(directory, template):
     f.write(html_content)
   return path
 
-def generate_index_files(root, template=None):
+def generate_index_files(root, parent=None, template=None):
   indexed = []
   is_root = False
+  stem = str(root).split("/")[-1]
+  parent = parent or stem
+  if stem in DEFAULT_EXCLUDES:
+    return indexed
+
   if not template:
     is_root = True
-    with open(Path(__file__).parent / "index_tpl.html", "r") as f:
+    template_path = Path(__file__).parent / "index_tpl.html"
+    with open(template_path, "r") as f:
       template = Template(f.read())
-  for dirpath, dirnames, filenames in os.walk(root):
-    if os.path.basename(dirpath) in DEFAULT_EXCLUDES:
-      continue
-    indexed.append(create_index_html(dirpath, template))
+
+  indexed.append(create_index_html(root, parent, template))
+
+  for dirpath, dirnames, filenames in os.walk(root): # selective recursion (os.walk traverses excluded subfolders)
+    dirnames[:] = [d for d in dirnames if d not in DEFAULT_EXCLUDES]
     for dirname in dirnames:
       sub_dir = os.path.join(dirpath, dirname)
-      indexed += generate_index_files(sub_dir, template)
+      indexed += generate_index_files(sub_dir, parent, template)
+
   if is_root:
     print(f"Indexed {len(indexed)} directories")
   return indexed
+
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description="Generate index files for directories")
