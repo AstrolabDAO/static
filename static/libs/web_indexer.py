@@ -108,7 +108,7 @@ def create_index_html(root, git_root, parent, template, missing_alts={}):
   prev = "./index.html"
   if index_dir != index_root:
     prev = "." + prev
-  html_content = template.render(prev_route=prev, directory=index_dir, file_rows=file_rows)
+  html_content = template.render(prev_route=prev, directory=f"/{parent}{index_dir}"[len(git_root):], file_rows=file_rows)
 
   path = os.path.join(root, "index.html")
   with open(path, "w") as f:
