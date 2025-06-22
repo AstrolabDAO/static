@@ -67,25 +67,25 @@ float march(vec3 eye, vec3 marchingDirection){
 vec3 color(vec3 camPos, vec3 rayDir){
     vec3 col = vec3(0.);
     vec3 pos = camPos;
-    
+
     float dis = march(pos, rayDir);
     if(dis >= 0.){
         pos += rayDir * dis;
         float h = heightAtPos(pos);
-        
+
         // **ENHANCED DEPTH-BASED SHADING**
         float depth = dis / 15.0; // **Normalize distance to a more manageable range** (adjust the divisor as needed)
         depth = clamp(depth, 0.0, 1.0); // Ensure depth stays within [0, 1] range
-        
+
         // **INTRODUCE MORE DRAMATIC SHADING WITH POWER FUNCTION**
         float strokeDarkness = pow(depth, 1.5); // Adjust the exponent to control the shading curve
-        
+
         // **EXPAND DYNAMIC RANGE FOR MORE VARIED GREY SHDES**
         strokeDarkness = mix(0.6, 0.1, strokeDarkness); // Map strokeDarkness to a wider range (0.05 to 0.95)
-        
+
         col = vec3(strokeDarkness) * smoothstep(.05, 0., distance(pos.y, h -.05));
     }
-    
+
     return col;
 }
 
@@ -94,7 +94,7 @@ vec3 makeClr(vec2 fragCoord){
     vec3 origin = vec3(0., vec2(10.));
     mat4 viewToWorld = viewMatrix(origin, vec3(0.), vec3(0., 1., 0.));
     vec3 dir = (viewToWorld * vec4(viewDir, 1.0)).xyz;
-    
+
     return color(origin, dir);
 }
 
@@ -105,7 +105,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ){
         for(int x = 0; x < AA; ++x){
             fragColor.rgb += clamp(makeClr(fragCoord + vec2(x, y) / float(AA)), 0., 1.);
         }
-    
+
     fragColor.rgb /= float(AA * AA);
     fragColor.a = 1.0; // Set alpha to 1.0 for the final fragment color
 }

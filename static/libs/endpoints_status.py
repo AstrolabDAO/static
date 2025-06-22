@@ -42,7 +42,7 @@ class EndpointChecker:
     self.MAX_PER_DOMAIN = 10  # Max concurrent requests per domain
     self.REQUEST_TIMEOUT = 10
     self.domain_semaphores = {}  # Semaphores for per-domain rate limiting
-    
+
     # RPC patterns that should be checked as RPC first
     self.RPC_PATTERNS = [
       'rpc.ankr',
@@ -52,7 +52,7 @@ class EndpointChecker:
       'blockpi.network',
       'drpc.org'
     ]
-    
+
     # RPC health check payloads
     self.ETH_HEALTH_PAYLOAD = {
       "jsonrpc": "2.0",
@@ -71,7 +71,7 @@ class EndpointChecker:
       "method": "sui_getProtocolConfig",
       "params": []
     }
-    
+
     # URL regex pattern
     self.url_pattern = re.compile(
       r'https?://'
@@ -86,7 +86,7 @@ class EndpointChecker:
   def extract_urls_from_string(self, text: str) -> Set[str]:
     """Extract URLs from a string using regex."""
     urls = set()
-    
+
     # Try to parse as JSON first if it looks like a JSON array
     text = text.strip()
     if text.startswith('[') and text.endswith(']'):
@@ -99,18 +99,18 @@ class EndpointChecker:
           return urls
       except json.JSONDecodeError:
         pass
-    
+
     # Clean up the input string - handle quotes and common separators
     text = text.replace('""', '"')  # Handle escaped quotes in CSV
     text = text.replace('],[', ' ').replace('[', '').replace(']', '')
     text = text.replace('","', ' ').replace('",', ' ').replace(',"', ' ')
-    
+
     # Find all URLs and clean them
     for url in self.url_pattern.findall(text):
       url = url.strip().rstrip(',').rstrip('"').rstrip("'").strip()
       if url and url.startswith('http'):  # Only include http(s) URLs
         urls.add(url)
-    
+
     return urls
 
   def extract_urls_from_object(self, obj) -> Set[str]:
@@ -130,9 +130,9 @@ class EndpointChecker:
     """Load URLs from various config file formats."""
     suffix = self.config_path.suffix.lower()
     urls = set()
-    
+
     logger.info(f"Loading config from {self.config_path}")
-    
+
     with open(self.config_path, 'r') as f:
       if suffix == '.csv':
         reader = csv.reader(f)
@@ -161,28 +161,28 @@ class EndpointChecker:
             urls = self.extract_urls_from_string(content)
         else:
           urls = self.extract_urls_from_string(content)
-    
+
     # Filter out websocket URLs
     urls = {url for url in urls if url.startswith('http')}
-    
+
     # Debug output
     logger.info(f"Found {len(urls)} unique URLs:")
     for url in sorted(urls):
       logger.info(f"  - {url}")
-    
+
     if not urls:
       logger.warning(f"No URLs found in {self.config_path}")
-    
+
     return urls
 
   async def detect_endpoint_type(self, response: aiohttp.ClientResponse, url: str) -> str:
     """Detect the type of endpoint based on response and URL."""
     content_type = response.headers.get('Content-Type', '').lower()
-    
+
     url_lower = url.lower()
     if any(chain in url_lower for chain in ['ethereum', 'eth', 'solana', 'sui', 'rpc']):
       return 'JSON-RPC'
-    
+
     try:
       if 'application/json' in content_type:
         await response.json()  # Try parsing JSON
@@ -193,7 +193,7 @@ class EndpointChecker:
         return 'JSON-RPC'
     except:
       pass
-    
+
     return 'Unknown'
 
   def should_check_as_rpc_first(self, url: str) -> bool:
@@ -205,7 +205,7 @@ class EndpointChecker:
     """Attempt RPC health checks for different node types."""
     start_time = time.time()
     headers = {"Content-Type": "application/json"}
-    
+
     # Try standard health endpoint first
     try:
       async with session.get(f"{url.rstrip('/')}/health", timeout=self.REQUEST_TIMEOUT) as response:
@@ -225,7 +225,7 @@ class EndpointChecker:
     # Try each RPC protocol in sequence
     url_lower = url.lower()
     payloads = []
-    
+
     # Determine order of protocols to try
     if 'sol' in url_lower:
       payloads = [self.SOLANA_HEALTH_PAYLOAD, self.ETH_HEALTH_PAYLOAD, self.SUI_HEALTH_PAYLOAD]
@@ -274,7 +274,7 @@ class EndpointChecker:
     """Check endpoint with domain-based rate limiting."""
     domain = self.get_domain_from_url(url)
     domain_semaphore = self.get_domain_semaphore(domain)
-    
+
     async with domain_semaphore:
       return await self.check_endpoint(session, url)
 
@@ -291,7 +291,7 @@ class EndpointChecker:
     try:
       async with session.get(url, timeout=self.REQUEST_TIMEOUT, ssl=False) as response:
         ping_ms = (time.time() - start_time) * 1000
-        
+
         # If we get a 404 and haven't tried RPC check yet, try it now
         if response.status == 404 and not self.should_check_as_rpc_first(url):
           rpc_status = await self.try_rpc_health_check(session, url)
@@ -300,7 +300,7 @@ class EndpointChecker:
 
         endpoint_type = await self.detect_endpoint_type(response, url)
         is_healthy = response.status == 200
-        
+
         return EndpointStatus(
           url=url,
           ping_ms=ping_ms,
@@ -332,7 +332,7 @@ class EndpointChecker:
     """Check a batch of endpoints concurrently with domain-based rate limiting."""
     connector = aiohttp.TCPConnector(limit=self.MAX_CONCURRENT_REQUESTS, force_close=True)
     timeout = aiohttp.ClientTimeout(total=self.REQUEST_TIMEOUT)
-    
+
     async with aiohttp.ClientSession(connector=connector, timeout=timeout) as session:
       tasks = [self.check_endpoint_with_rate_limit(session, url) for url in urls]
       return await asyncio.gather(*tasks)
@@ -361,7 +361,7 @@ class EndpointChecker:
 
     for endpoint in sorted(self.endpoints, key=lambda x: (x.url, x.ping_ms)):
       url_display = endpoint.url[:57] + "..." if len(endpoint.url) > 60 else endpoint.url
-      
+
       if not endpoint.is_healthy:
         if endpoint.error:
           error_count += 1
@@ -403,14 +403,14 @@ class EndpointChecker:
     logger.info(f"Healthy: {healthy_count} ({(healthy_count/total*100):.1f}%)")
     logger.info(f"Slow: {slow_count} ({(slow_count/total*100):.1f}%)")
     logger.info(f"Errors: {error_count} ({(error_count/total*100):.1f}%)")
-    
+
     logger.info("\n=== Healthy Endpoints ===")
     logger.info(healthy_table)
-    
+
     if slow_count > 0:
       logger.info("\n=== Slow Endpoints (>1000ms) ===")
       logger.info(slow_table)
-    
+
     if error_count > 0:
       logger.info("\n=== Failed Endpoints ===")
       logger.info(error_table)
@@ -420,7 +420,7 @@ class EndpointChecker:
     urls = list(self.load_config())
     total_urls = len(urls)
     logger.info(f"Found {total_urls} endpoints to check")
-    
+
     # Group URLs by domain for better rate limiting
     domain_groups = {}
     for url in urls:
@@ -428,7 +428,7 @@ class EndpointChecker:
       if domain not in domain_groups:
         domain_groups[domain] = []
       domain_groups[domain].append(url)
-    
+
     # Process URLs in interleaved batches to distribute load
     processed = 0
     results = []
@@ -440,18 +440,18 @@ class EndpointChecker:
           batch.append(domain_urls.pop(0))
           if len(batch) >= self.MAX_CONCURRENT_REQUESTS:
             break
-      
+
       if not batch:  # No more URLs to process
         break
-        
+
       batch_results = await self.check_endpoints_batch(batch)
       results.extend(batch_results)
       processed += len(batch)
-      
+
       # Log progress
       progress = (processed / total_urls) * 100
       logger.info(f"Progress: {processed}/{total_urls} ({progress:.1f}%)")
-      
+
       # Log results as they come in
       for status in batch_results:
         if status.error:
@@ -461,7 +461,7 @@ class EndpointChecker:
             f"URL: {status.url} - Ping: {status.ping_ms:.2f}ms - "
             f"Status: {status.status_code} - Type: {status.endpoint_type}"
           )
-    
+
     self.endpoints = results
 
 async def main_async(config_path: str):
@@ -477,5 +477,5 @@ if __name__ == "__main__":
   if len(sys.argv) != 2:
     print("Usage: python endpoints_status.py <config_file>")
     sys.exit(1)
-  
+
   main(sys.argv[1])

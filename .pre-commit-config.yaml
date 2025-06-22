@@ -1,0 +1,52 @@
+# Pre-commit configuration for Chomp Frontend
+# See https://pre-commit.com for more information
+# All checks run on every commit for maximum safety and simplicity
+repos:
+  # Standard pre-commit hooks for general file maintenance
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.md$
+      - id: end-of-file-fixer
+        exclude: \.md$
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+
+  # Asset optimization for images in static directory
+  - repo: https://github.com/pde-rent/opt-pre-commit
+    rev: v1.0.3
+    hooks:
+      - id: optimize-assets
+        name: optimize raster/vector images
+        args: [--asset-dir, ./static/assets/images, --mode, lossless]
+
+  # Naming conventions enforcement
+  - repo: https://github.com/pde-rent/naming-pre-commit
+    rev: v1.0.0
+    hooks:
+      # Check branch names at commit time
+      - id: check-naming
+        name: check branch name
+        description: Enforce branch naming conventions
+        stages: [pre-commit]
+        args:
+          - --check-branch
+          - --branch-pattern
+          - '^(feat|fix|refac|ops|docs)/'
+      # Check commit messages after commit message is written
+      - id: check-naming
+        name: check commit message
+        description: Enforce commit message conventions
+        stages: [commit-msg]
+        args:
+          - --check-commit
+          - --commit-pattern
+          - '^\[(feat|fix|refac|ops|docs)\] '
+
+# Global configuration
+fail_fast: false
+default_stages: [pre-commit]
